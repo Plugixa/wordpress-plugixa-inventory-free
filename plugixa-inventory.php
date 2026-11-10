@@ -4,7 +4,7 @@
  * Plugin Name: Plugixa Inventory
  * Plugin URI: https://www.plugixa.com/plugins/plugixa-inventory
  * Description: Modular inventory management for WordPress — items, warehouses, stock movements, an append-only stock ledger, CSV import and export, and a React admin application.
- * Version: 1.1.0
+ * Version: 1.1.1
  * Author: Plugixa
  * Author URI: https://www.plugixa.com
  * License: GPL-2.0-or-later
@@ -82,7 +82,7 @@ if ( defined( 'PLUGIXA_INVENTORY_PATH' ) ) {
     } );
     return;
 }
-define( 'PLUGIXA_INVENTORY_VERSION', '1.1.0' );
+define( 'PLUGIXA_INVENTORY_VERSION', '1.1.1' );
 define( 'PLUGIXA_INVENTORY_PATH', plugin_dir_path( __FILE__ ) );
 define( 'PLUGIXA_INVENTORY_URL', plugin_dir_url( __FILE__ ) );
 define( 'PLUGIXA_INVENTORY_BASENAME', plugin_basename( __FILE__ ) );

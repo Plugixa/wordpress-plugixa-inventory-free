@@ -116,6 +116,18 @@ final class Config {
 			// Not this plugin's to set, and the app needs it to render a ledger timestamp. See the
 			// Settings class docblock for why there is no timezone setting of our own.
 			'timezone'    => wp_timezone_string(),
+
+			/*
+			 * `free` or `premium`, from the `pro/` folder. The free build shows a Pro features page
+			 * and a gold button to site managers; the premium build carries the same free code and
+			 * must not. Not the old `hasPro` flag above: that tried to say WHICH features exist,
+			 * this only says which plugin to advertise.
+			 */
+			'edition'     => Edition::current(),
+
+			// Where "See Pro plans" goes. A link somebody clicks, never a request, and it travels
+			// from here so the app's own source names no outside host.
+			'pricingUrl'  => Edition::PRICING_URL,
 		);
 
 		$config = array_merge( $config, $extra );
