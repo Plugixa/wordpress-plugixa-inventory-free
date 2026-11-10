@@ -1,0 +1,23 @@
+{
+    "name": "plugixa/plugixa-inventory",
+    "description": "Modular inventory management for WordPress.",
+    "type": "wordpress-plugin",
+    "license": "GPL-2.0-or-later",
+    "require": {
+        "php": ">=8.2",
+        "freemius/wordpress-sdk": "^2.12",
+        "psr/container": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PlugixaInventory\\": "includes/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "platform": {
+            "php": "8.2"
+        }
+    }
+}

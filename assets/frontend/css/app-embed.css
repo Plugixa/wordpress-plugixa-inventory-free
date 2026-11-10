@@ -1,0 +1,95 @@
+/*
+ * The frame that holds the inventory inside a themed page.
+ *
+ * Everything here styles the CONTAINER, never the app. The app is in another document and cannot be
+ * reached from this stylesheet at all -- which is the entire point of the iframe, and the reason
+ * this file can afford to be twelve rules long.
+ */
+
+.plugixa-inventory-embed {
+	/*
+	 * A definite height, not a content-derived one. An iframe has no idea how tall its document is,
+	 * and an app whose own shell is `height: 100vh` inside the frame has no natural height to report
+	 * back even if it did. So the container states one and the app fills it.
+	 *
+	 * The clamp is the useful part: fill most of the window, but never get so short that the
+	 * DataGrid's own 400px minimum plus a toolbar leaves nothing visible, and never so tall on a
+	 * very large monitor that the theme's footer is unreachable without scrolling past a full
+	 * screen of application.
+	 *
+	 * `--pxi-embed-height` is what the shortcode's `height` attribute sets, per instance.
+	 */
+	height: var(--pxi-embed-height, clamp(520px, calc(100vh - 12rem), 900px));
+
+	position: relative;
+	margin-block: 1.5rem;
+	border: 1px solid rgb(0 0 0 / 12%);
+
+	/* Matches the app's own `shape.borderRadius: 8` so the frame reads as part of it. */
+	border-radius: 8px;
+
+	/* The frame's corners are square; without this they overhang the rounded border. */
+	overflow: hidden;
+	background: #fff;
+}
+
+.plugixa-inventory-embed__frame {
+	display: block;
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+/*
+ * THERE ARE DELIBERATELY NO WIDTH RULES HERE.
+ *
+ * Width is applied by putting WordPress's own `alignwide` / `alignfull` class on the wrapper, which
+ * every block theme already understands and which picks up each theme's wide size and global
+ * padding for free. Writing the width here instead was tried and lost: a block theme's constrained
+ * layout rule is specificity (0,1,0), the same as a single class, so it ties and wins on source
+ * order because global styles print inline in the head. `EmbedRenderer::ALIGNMENTS` carries the
+ * full account.
+ *
+ * The `--wide` / `--full` / `--content` classes stay on the element as hooks a site's own CSS can
+ * use, and so the rendered markup says which arrangement it asked for.
+ */
+
+/*
+ * THE FALLBACK FOR BROWSERS WITH NO FULLSCREEN API -- Safari on iPhone, which does not allow
+ * `requestFullscreen()` on anything but a video.
+ *
+ * Without this the app's full-screen button would hide itself on exactly the device where a frame
+ * inside a themed page is most cramped. The button stays and expands the frame in place instead.
+ *
+ * IT STOPS BELOW THE WORDPRESS ADMIN BAR, ON PURPOSE. `lib/theme.ts` already sets out the rule this
+ * follows -- the admin bar is 99999 and the skip link 100000, "both are WordPress's, and a plugin
+ * that covers the admin bar or an accessibility skip link is misbehaving". Sitting under it also
+ * leaves a visible, familiar way back out, which a real fullscreen exit gesture does not.
+ */
+.plugixa-inventory-embed.is-expanded {
+	position: fixed;
+	top: var(--wp-admin--admin-bar--height, 0);
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: auto;
+	max-width: none;
+	height: auto;
+	margin: 0;
+	transform: none;
+	border: 0;
+	border-radius: 0;
+	z-index: 99998;
+}
+
+/* While expanded the page behind must not scroll under the frame. */
+body.plugixa-inventory-embed-locked {
+	overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+	.plugixa-inventory-embed {
+		background: #121212;
+		border-color: rgb(255 255 255 / 12%);
+	}
+}

@@ -1,0 +1,44 @@
+/*
+ * The rules the bare application document needs before React boots.
+ *
+ * The UA default is `body { margin: 8px }`, and with the theme's stylesheet stripped there is
+ * nothing else to say otherwise until MUI's CssBaseline sets it to zero -- and CssBaseline is
+ * injected at runtime by Emotion, not shipped in the built stylesheet. Without these the app
+ * visibly jumps 8px on mount.
+ *
+ * THIS IS A FILE RATHER THAN AN INLINE <style> BLOCK FOR A REVIEW REASON, NOT A TECHNICAL ONE.
+ * wordpress.org rejects raw <script>/<style> tags in shipped PHP, and PHPCS cannot see them --
+ * `WordPress.WP.EnqueuedResources` matches only tags carrying src/href, so an inline block with
+ * neither is invisible to it. Both audit gates passed with the previous inline tag live.
+ *
+ * It is printed BY HANDLE, before wp_head(), from Core/Frontend/views/app-page.php. The ordering
+ * is load-bearing: the admin bar attaches `html { margin-top: 32px !important }` to its own handle
+ * during wp_head(), and that has to win.
+ */
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+/*
+ * THE FRAME HAS NO ADMIN BAR, SO IT MUST SAY SO OUT LOUD.
+ *
+ * `shell/Layout.tsx` sizes the whole shell with
+ * `height: calc(100vh - var(--wp-admin--admin-bar--height, 32px))`. That variable is defined by the
+ * admin bar's own stylesheet, so it exists exactly when the bar does -- and inside the embed's
+ * iframe the bar is suppressed, because the page around the frame already has one and two would
+ * stack. The variable is then undefined and the 32px FALLBACK applies: the app would reserve space
+ * for a toolbar that is not in the document, leaving a strip of dead background along the bottom of
+ * every embedded page.
+ *
+ * Declared on `body` rather than `:root` deliberately -- the class is added by `body_class()`, and
+ * custom properties inherit, so the app inside picks it up either way.
+ *
+ * Only for the framed document. The standalone full-page arrangement DOES render the admin bar, and
+ * zeroing this there would slide the app up underneath it.
+ */
+body.plugixa-inventory-app-frame {
+	--wp-admin--admin-bar--height: 0px;
+}

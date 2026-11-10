@@ -1,0 +1,24 @@
+{
+  "src/main.tsx": {
+    "file": "js/main-BTSGTqVb.js",
+    "name": "main",
+    "src": "src/main.tsx",
+    "isEntry": true,
+    "assets": [
+      "assets/plugixa-logo-DnjmQzFj.webp",
+      "assets/plugixa-logo-dark-DF-8mZLf.webp"
+    ]
+  },
+  "src/shell/brand/plugixa-logo-dark.webp": {
+    "file": "assets/plugixa-logo-dark-DF-8mZLf.webp",
+    "src": "src/shell/brand/plugixa-logo-dark.webp"
+  },
+  "src/shell/brand/plugixa-logo.webp": {
+    "file": "assets/plugixa-logo-DnjmQzFj.webp",
+    "src": "src/shell/brand/plugixa-logo.webp"
+  },
+  "style.css": {
+    "file": "css/main.css",
+    "src": "style.css"
+  }
+}

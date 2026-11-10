@@ -1,0 +1,20 @@
+Plugixa Inventory -- compiled output
+====================================
+
+Every file in this directory is GENERATED. Do not edit it by hand; the next
+build overwrites it.
+
+Human-readable source
+---------------------
+  assets/backend/app/src/       React admin application (TypeScript, MUI)
+
+Rebuild
+-------
+  cd assets/backend/app && npm install && npm run build
+  (requires Node.js 20.19+ or 22.12+)
+
+Exact dependency versions are pinned in the package-lock.json next to that
+source. Any .js.map alongside a bundle here also embeds the original source
+verbatim in its "sourcesContent" field.
+
+License: GPLv2 or later -- https://www.gnu.org/licenses/gpl-2.0.html

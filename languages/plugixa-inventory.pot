@@ -1,0 +1,3199 @@
+# Copyright (C) 2026 Plugixa
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Plugixa Inventory 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plugixa-inventory\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-02T15:40:34+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: plugixa-inventory\n"
+
+#. Plugin Name of the plugin
+#: plugixa-inventory.php
+#: includes/Core/Admin/Admin.php:33
+#: includes/Core/Admin/Admin.php:34
+msgid "Plugixa Inventory"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: plugixa-inventory.php
+msgid "https://www.plugixa.com/plugins/plugixa-inventory"
+msgstr ""
+
+#. Description of the plugin
+#: plugixa-inventory.php
+msgid "Modular inventory management for WordPress — items, warehouses, stock movements, an append-only stock ledger, CSV import and export, and a React admin application."
+msgstr ""
+
+#. Author of the plugin
+#: plugixa-inventory.php
+msgid "Plugixa"
+msgstr ""
+
+#. Author URI of the plugin
+#: plugixa-inventory.php
+msgid "https://www.plugixa.com"
+msgstr ""
+
+#: includes/Core/Admin/Admin.php:46
+#: includes/Core/Admin/Admin.php:47
+#: includes/Modules/Dashboard/Strings.php:28
+#: includes/Modules/Dashboard/Strings.php:62
+msgid "Dashboard"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:51
+#: includes/Modules/WarehouseDashboard/Strings.php:37
+msgid "Overview"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:52
+#: includes/Core/Admin/Strings.php:201
+#: includes/Core/Frontend/EmbedRenderer.php:130
+#: includes/Modules/WarehouseDashboard/Strings.php:38
+msgid "Inventory"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:53
+#: includes/Modules/AppManager/Strings.php:39
+msgid "Operations"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:54
+msgid "Reports"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:55
+#: includes/Modules/AppManager/Strings.php:41
+msgid "Configuration"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:58
+msgid "Search"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:59
+msgid "Filters"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:60
+msgid "Clear filters"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:61
+msgid "Nothing to show"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:62
+msgid "Rows per page"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:63
+#: includes/Core/Admin/Strings.php:133
+msgid "Trash"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:64
+msgid "Restore"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:65
+#: includes/Core/Admin/Strings.php:131
+msgid "Delete permanently"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:66
+#: includes/Core/Admin/Strings.php:173
+msgid "Export CSV"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:67
+msgid "selected"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:70
+msgid "Save"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:71
+msgid "Saving…"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:72
+msgid "Cancel"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:73
+msgid "Edit"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:74
+msgid "Delete"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:75
+msgid "Create"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:76
+msgid "This field is required."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:77
+msgid "You have unsaved changes."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:78
+msgid "Not saved yet: a section below needs attention."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:79
+msgid "Delete this permanently? This cannot be undone."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:82
+msgid "Loading…"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:83
+msgid "Something went wrong."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:84
+#: includes/Core/Http/RestController.php:199
+msgid "You are not allowed to do that."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:85
+msgid "Not found."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:86
+msgid "Somebody else changed this while you were editing. Reload and try again."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:87
+msgid "Could not save"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:88
+msgid "Try again"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:91
+#: includes/Modules/AppManager/Strings.php:58
+msgid "Settings"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:92
+msgid "General"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:93
+msgid "Number formatting"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:94
+msgid "Settings saved."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:95
+msgid "Currency"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:96
+msgid "Symbol position"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:97
+msgid "Before the amount"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:98
+msgid "After the amount"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:99
+msgid "Currency decimals"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:100
+msgid "Quantity decimals"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:101
+msgid "Decimal separator"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:102
+msgid "Thousands separator"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:103
+msgid "Date format"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:104
+msgid "Preview"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:105
+msgid "Records per page"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:116
+msgid "Times are shown in the site timezone, set in WordPress under Settings → General."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:117
+msgid "Draft"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:118
+msgid "Finalized"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:119
+msgid "available"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:120
+msgid "requested"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:121
+msgid "Still editable after finalizing."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:122
+msgid "These lines are what the stock ledger was written from and cannot be changed."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:123
+msgid "No items added yet."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:124
+msgid "A quantity has to be more than zero."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:125
+msgid "(draft)"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:126
+#: includes/Modules/Categories/Module.php:189
+#: includes/Modules/Categories/Repositories/CategoryRepository.php:52
+#: includes/Modules/Categories/Services/CategoryService.php:57
+#: includes/Modules/Categories/Services/CategoryService.php:93
+#: includes/Modules/Categories/Strings.php:44
+#: includes/Modules/Items/Module.php:344
+#: includes/Modules/Items/Repositories/ItemRepository.php:92
+#: includes/Modules/Items/Services/ItemService.php:303
+#: includes/Modules/Items/Strings.php:82
+#: includes/Modules/Recipients/Module.php:190
+#: includes/Modules/Recipients/Repositories/RecipientRepository.php:52
+#: includes/Modules/Recipients/Services/RecipientService.php:46
+#: includes/Modules/Recipients/Services/RecipientService.php:76
+#: includes/Modules/Recipients/Strings.php:51
+#: includes/Modules/StockMovements/Module.php:224
+#: includes/Modules/StockMovements/Repositories/StockMovementRepository.php:73
+#: includes/Modules/Warehouses/Module.php:180
+#: includes/Modules/Warehouses/Repositories/WarehouseRepository.php:52
+#: includes/Modules/Warehouses/Services/WarehouseService.php:48
+#: includes/Modules/Warehouses/Services/WarehouseService.php:78
+#: includes/Modules/Warehouses/Strings.php:51
+msgid "Status"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:127
+msgid "No SKU"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:128
+msgid "Assigned user"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:129
+msgid "This record is not available"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:130
+msgid "It may have been deleted, or you may not have access to it. Ask whoever set up your inventory access if you think you should see it."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:132
+#: includes/Modules/AppManager/Strings.php:45
+msgid "Active"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:134
+msgid "{count} selected"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:135
+msgid "Clear"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:136
+msgid "No records match these filters."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:137
+msgid "No records match your search."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:138
+msgid "No records match your search and these filters."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:139
+msgid "No records yet."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:140
+#: includes/Modules/Import/Strings.php:97
+msgid "Clear all"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:141
+msgid "Clear search"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:142
+msgid "You do not have access to this"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:143
+msgid "This could not be loaded"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:144
+msgid "Ask whoever set up your inventory access if you think you should see it."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:145
+#: includes/Core/Database/Repository.php:145
+msgid "Created"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:146
+#: includes/Core/Database/Repository.php:151
+msgid "Modified"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:147
+msgid "Whoever owns the record"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:148
+msgid "The default pipeline"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:149
+msgid "Not set"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:150
+msgid "Save as draft"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:151
+msgid "Save & finalize"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:152
+msgid "Type at least 2 characters"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:153
+msgid "No items found"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:154
+msgid "Search item"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:155
+#: includes/Modules/StockMovements/Services/StockMovementService.php:422
+msgid "Quantity"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:156
+msgid "Cost / unit"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:157
+msgid "Defaults to the item's"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:158
+msgid "Add"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:159
+msgid "Total"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:160
+msgid "Remove"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:161
+msgid "line"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:162
+msgid "lines"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:163
+msgid "Available stock is checked when the document is finalized."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:164
+msgid "No filters yet. Add a field to narrow this list."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:165
+msgid "Add a field"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:174
+msgid "Exporting…"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:175
+msgid "The export could not be produced."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:182
+msgid "Reset"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:183
+#: includes/Modules/Stock/Strings.php:70
+msgid "Apply"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:184
+msgid "Change comparison"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:185
+msgid "Remove filter"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:186
+msgid "Yes"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:187
+msgid "No"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:188
+#: includes/Core/Admin/Strings.php:289
+msgid "From"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:189
+#: includes/Core/Admin/Strings.php:290
+msgid "To"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:190
+msgid "— Any —"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:191
+#: includes/Core/Admin/Strings.php:311
+msgid "is empty"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:192
+#: includes/Core/Admin/Strings.php:312
+msgid "is not empty"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:193
+msgid "Profile"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:194
+msgid "Back to site"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:195
+msgid "Exit to WordPress"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:196
+msgid "Log out"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:197
+msgid "Account"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:198
+msgid "Menu"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:202
+msgid "View site"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:205
+msgid "Local"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:206
+msgid "Development"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:207
+msgid "Staging"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:208
+msgid "This is not the live site"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:214
+msgid "Search items, pages…"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:215
+msgid "Search pages…"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:216
+msgid "Scan a barcode, or search items and pages…"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:217
+msgid "Go to"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:219
+msgid "to move"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:220
+msgid "to open"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:221
+msgid "Type two letters to search"
+msgstr ""
+
+#. translators: %s: what the user typed into the search box.
+#: includes/Core/Admin/Strings.php:223
+#, php-format
+msgid "Nothing matches “%s”."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:227
+msgid "Full screen"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:228
+msgid "Exit full screen"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:230
+msgid "Unassigned"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:232
+msgid "This app is switched off in the App manager."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:233
+msgid "Whether it runs at all is decided there. These options only apply while it is on, and nothing here has been lost."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:234
+msgid "Open the App manager"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:235
+msgid "How prices and values are written."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:236
+msgid "Date and time"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:237
+msgid "How dates are written throughout the app."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:238
+msgid "How quantities are written throughout the app."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:239
+msgid "Lists"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:240
+msgid "How much of a list is shown at once."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:241
+msgid "Between 10 and 200."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:244
+msgid "Uninstall"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:245
+msgid "Delete all inventory data when the plugin is deleted"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:246
+msgid "Off by default: deleting the plugin removes its files and keeps the inventory, so installing it again picks up where you left off. Deactivating never deletes anything."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:247
+msgid "Deleting the plugin will now permanently remove every item, warehouse, document, ledger row and setting — unless another copy of the plugin is still installed, because that copy uses the same data."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:250
+msgid "Just now"
+msgstr ""
+
+#. translators: %s: a number of minutes.
+#: includes/Core/Admin/Strings.php:252
+#, php-format
+msgid "%s minutes ago"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:253
+msgid "A minute ago"
+msgstr ""
+
+#. translators: %s: a number of hours.
+#: includes/Core/Admin/Strings.php:255
+#, php-format
+msgid "%s hours ago"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:256
+msgid "An hour ago"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:257
+msgid "Yesterday"
+msgstr ""
+
+#. translators: %s: a number of days.
+#: includes/Core/Admin/Strings.php:259
+#, php-format
+msgid "%s days ago"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:262
+msgid "Here is what is happening with your inventory."
+msgstr ""
+
+#. translators: %s: a number of items.
+#: includes/Core/Admin/Strings.php:264
+#, php-format
+msgid "Across %s items"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:274
+msgid "At cost"
+msgstr ""
+
+#. translators: %s: how many kinds of item (asset, consumable, sellable).
+#: includes/Core/Admin/Strings.php:276
+#, php-format
+msgid "%s kinds"
+msgstr ""
+
+#. translators: %s: a percentage, already written with its sign, e.g. "20%".
+#: includes/Core/Admin/Strings.php:278
+#, php-format
+msgid "%s of the inventory"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:279
+msgid "No stock anywhere yet"
+msgstr ""
+
+#. translators: %s: a number of days.
+#: includes/Core/Admin/Strings.php:281
+#, php-format
+msgid "Last %s days"
+msgstr ""
+
+#. translators: %s: how many ledger entries an item has.
+#: includes/Core/Admin/Strings.php:283
+#, php-format
+msgid "%s movements"
+msgstr ""
+
+#. translators: %s: a quantity of stock.
+#: includes/Core/Admin/Strings.php:285
+#, php-format
+msgid "%s moved"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:287
+msgid "Actions"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:292
+msgid "Move to trash?"
+msgstr ""
+
+#. translators: %s: the record's name.
+#: includes/Core/Admin/Strings.php:294
+#, php-format
+msgid "“%s” will be moved to the trash. You can restore it from the trash view."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:296
+msgid "Finalize"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:297
+msgid "Finalize this document?"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:298
+msgid "This cannot be undone. Correcting it later means a second document."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:300
+msgid "is"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:301
+msgid "is not"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:302
+msgid "is one of"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:303
+msgid "is none of"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:304
+msgid "is less than"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:305
+msgid "is at most"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:306
+msgid "is more than"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:307
+msgid "is at least"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:308
+msgid "is between"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:309
+msgid "contains"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:310
+msgid "starts with"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:314
+msgid "No warehouses yet. Add one under Configuration → Warehouses, then come back."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:315
+msgid "{done} done, {skipped} skipped, {failed} failed."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:316
+msgid "That could not be applied."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:317
+msgid "Publish"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:318
+msgid "Unpublish"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:319
+msgid "Move to trash"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:320
+msgid "Move {count} record(s) to the trash? You can restore them from the Trash view."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:321
+msgid "Nothing to choose from yet — create one first."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:322
+msgid "Nothing matches that."
+msgstr ""
+
+#. translators: %d: the maximum number of characters the field holds.
+#: includes/Core/Database/Repository.php:612
+#, php-format
+msgid "This is too long: at most %d characters."
+msgstr ""
+
+#: includes/Core/Documents/Immutability.php:101
+msgid "A finalized document cannot be changed. Create a reversing document instead."
+msgstr ""
+
+#: includes/Core/Documents/Immutability.php:123
+msgid "A finalized document cannot be deleted. It is part of the stock audit trail."
+msgstr ""
+
+#: includes/Core/Documents/Immutability.php:148
+msgid "The lines of a finalized document cannot be changed. They are what the stock ledger was written from."
+msgstr ""
+
+#: includes/Core/Entities/MassAction.php:75
+msgid "That is not a mass action."
+msgstr ""
+
+#: includes/Core/Entities/MassAction.php:81
+msgid "That kind of record cannot be changed in bulk."
+msgstr ""
+
+#: includes/Core/Entities/MassAction.php:89
+msgid "Nothing was selected."
+msgstr ""
+
+#. translators: %d: the maximum number of records per request.
+#: includes/Core/Entities/MassAction.php:97
+#, php-format
+msgid "At most %d records can be changed in one go."
+msgstr ""
+
+#: includes/Core/Entities/MassAction.php:108
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: includes/Core/Entities/MassAction.php:112
+msgid "There is nothing to change."
+msgstr ""
+
+#. translators: 1: the field's name, e.g. "Type". 2: the accepted values, comma separated.
+#: includes/Core/Entities/RawInput.php:67
+#, php-format
+msgid "%1$s must be one of: %2$s."
+msgstr ""
+
+#. translators: %s: the field's name, e.g. "Cost price".
+#: includes/Core/Entities/RawInput.php:135
+#, php-format
+msgid "%s must be a number, with a dot for decimals."
+msgstr ""
+
+#. translators: %s: the field's name, e.g. "Cost price".
+#: includes/Core/Entities/RawInput.php:149
+#, php-format
+msgid "%s is too large."
+msgstr ""
+
+#. translators: %s: the field's name, e.g. "Cost price".
+#: includes/Core/Entities/RawInput.php:161
+#, php-format
+msgid "%s cannot be negative."
+msgstr ""
+
+#. translators: %s: the field's name, e.g. "Date".
+#: includes/Core/Entities/RawInput.php:191
+#, php-format
+msgid "%s is not a real date. Use YYYY-MM-DD, optionally followed by a time."
+msgstr ""
+
+#: includes/Core/Entities/RecordWriter.php:105
+msgid "The record could not be created."
+msgstr ""
+
+#: includes/Core/Entities/RecordWriter.php:132
+msgid "The record could not be updated."
+msgstr ""
+
+#. translators: %s: an entity slug, e.g. "contact".
+#: includes/Core/Entities/RecordWriter.php:214
+#, php-format
+msgid "Records of type \"%s\" cannot be imported."
+msgstr ""
+
+#: includes/Core/Entities/RecordWriter.php:224
+msgid "You do not have permission to save that kind of record."
+msgstr ""
+
+#. translators: %s: the field asked for.
+#: includes/Core/Filters/FilterCompiler.php:80
+#, php-format
+msgid "\"%s\" is not something this list can filter on."
+msgstr ""
+
+#. translators: 1: the operator asked for, 2: the field.
+#: includes/Core/Filters/FilterCompiler.php:95
+#, php-format
+msgid "\"%1$s\" is not a comparison that works on \"%2$s\"."
+msgstr ""
+
+#. translators: %s: the field.
+#: includes/Core/Filters/FilterCompiler.php:110
+#, php-format
+msgid "The filter on \"%s\" is missing a value."
+msgstr ""
+
+#. translators: 1: the value sent, 2: the field.
+#: includes/Core/Filters/FilterCompiler.php:128
+#, php-format
+msgid "\"%1$s\" is not a date, so \"%2$s\" cannot be filtered by it."
+msgstr ""
+
+#: includes/Core/Frontend/AppRenderer.php:106
+msgid "Sign in to open the inventory."
+msgstr ""
+
+#: includes/Core/Frontend/AppRenderer.php:108
+msgid "Sign in"
+msgstr ""
+
+#: includes/Core/Frontend/DevBar.php:104
+msgid "Inventory: yes"
+msgstr ""
+
+#: includes/Core/Frontend/DevBar.php:105
+msgid "Inventory: no"
+msgstr ""
+
+#: includes/Core/Frontend/DevBar.php:138
+msgid "Sign out"
+msgstr ""
+
+#: includes/Core/Frontend/DevBar.php:139
+msgid "dev only"
+msgstr ""
+
+#: includes/Core/Http/Concurrency.php:101
+msgid "Somebody else changed this record while you were editing it. Reload to see their version before saving yours."
+msgstr ""
+
+#: includes/Core/Http/FiltersController.php:105
+msgid "There is no such record type."
+msgstr ""
+
+#: includes/Core/Http/PublicRequestGuard.php:62
+msgid "This request could not be processed."
+msgstr ""
+
+#: includes/Core/Http/PublicRequestGuard.php:96
+msgid "The anti-spam check did not pass. Please try again."
+msgstr ""
+
+#: includes/Core/Http/PublicRequestGuard.php:135
+msgid "Too many requests. Please wait a little while and try again."
+msgstr ""
+
+#: includes/Core/Http/SettingsController.php:70
+msgid "Only a site administrator can change what deleting the plugin does to the inventory."
+msgstr ""
+
+#: includes/Modules/AppManager/Services/AppCatalogue.php:131
+msgid "There is no such app."
+msgstr ""
+
+#: includes/Modules/AppManager/Services/AppCatalogue.php:141
+msgid "This app is part of the core and cannot be switched off."
+msgstr ""
+
+#. translators: %s: comma-separated list of app names.
+#: includes/Modules/AppManager/Services/AppCatalogue.php:165
+#, php-format
+msgid "Switch these on first: %s"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:34
+#: includes/Modules/AppManager/Strings.php:56
+msgid "App manager"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:35
+msgid "Switching an app off hides it everywhere, stops its endpoints answering and stops its background work — and keeps all of its data, so you can switch it back on and pick up where you left off."
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:36
+msgid "Core · always on"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:38
+msgid "All apps"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:40
+msgid "Insight"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:42
+msgid "Tools"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:44
+msgid "Always on"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:46
+msgid "Inactive"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:47
+msgid "Activate"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:48
+msgid "Deactivate"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:49
+msgid "Needs"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:50
+msgid "Off because something it needs is off."
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:51
+msgid "That could not be changed"
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:52
+msgid "Nothing here yet."
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:53
+msgid "Nothing here deletes anything. An app you switch off keeps its records and its settings, and finds them again when you switch it back on."
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:57
+msgid "Turn features on and off. Anything switched off keeps its data."
+msgstr ""
+
+#: includes/Modules/AppManager/Strings.php:59
+msgid "Global configuration: formatting, currency, appearance and each app's own options."
+msgstr ""
+
+#: includes/Modules/Categories/Module.php:171
+#: includes/Modules/Categories/Strings.php:35
+#: includes/Modules/Items/Module.php:291
+#: includes/Modules/Items/Repositories/ItemRepository.php:104
+#: includes/Modules/Items/Strings.php:52
+msgid "Category"
+msgstr ""
+
+#: includes/Modules/Categories/Module.php:172
+#: includes/Modules/Categories/Strings.php:34
+#: includes/Modules/Categories/Strings.php:52
+msgid "Categories"
+msgstr ""
+
+#: includes/Modules/Categories/Module.php:176
+#: includes/Modules/Categories/Repositories/CategoryRepository.php:58
+#: includes/Modules/Categories/Strings.php:40
+#: includes/Modules/Warehouses/Module.php:167
+#: includes/Modules/Warehouses/Repositories/WarehouseRepository.php:63
+#: includes/Modules/Warehouses/Strings.php:40
+msgid "Code"
+msgstr ""
+
+#: includes/Modules/Categories/Module.php:180
+#: includes/Modules/Categories/Strings.php:42
+#: includes/Modules/Items/Module.php:268
+#: includes/Modules/Items/Strings.php:40
+#: includes/Modules/Recipients/Module.php:165
+#: includes/Modules/Recipients/Strings.php:39
+#: includes/Modules/Warehouses/Module.php:171
+#: includes/Modules/Warehouses/Strings.php:41
+msgid "Name"
+msgstr ""
+
+#: includes/Modules/Categories/Module.php:185
+#: includes/Modules/Categories/Strings.php:43
+#: includes/Modules/Items/Module.php:340
+#: includes/Modules/Items/Strings.php:72
+msgid "Description"
+msgstr ""
+
+#: includes/Modules/Categories/Services/CategoryService.php:74
+msgid "The category could not be saved."
+msgstr ""
+
+#. translators: %s: the category code.
+#: includes/Modules/Categories/Services/CategoryService.php:167
+#, php-format
+msgid "This category cannot be restored: another category is now using the code \"%s\". Rename that one first."
+msgstr ""
+
+#: includes/Modules/Categories/Services/CategoryService.php:184
+msgid "That category does not exist."
+msgstr ""
+
+#: includes/Modules/Categories/Services/CategoryService.php:230
+msgid "A category needs a name."
+msgstr ""
+
+#: includes/Modules/Categories/Services/CategoryService.php:245
+#: includes/Modules/Warehouses/Services/WarehouseService.php:233
+msgid "A code may only contain letters, digits, dashes and underscores."
+msgstr ""
+
+#. translators: %s: the category code.
+#: includes/Modules/Categories/Services/CategoryService.php:257
+#, php-format
+msgid "A category with the code \"%s\" already exists."
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:36
+msgid "All categories"
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:37
+msgid "New category"
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:38
+msgid "Edit category"
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:39
+msgid "Search categories…"
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:41
+msgid "A short identifier such as ELEC or SAFE. Letters, digits, dashes and underscores."
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:45
+msgid "Published"
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:46
+msgid "Unpublished"
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:47
+msgid "No categories yet"
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:48
+msgid "Categories group your items and give the valuation report something to break totals down by."
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:49
+#: includes/Modules/Dashboard/Strings.php:33
+#: includes/Modules/Items/Module.php:264
+#: includes/Modules/Items/Strings.php:34
+#: includes/Modules/Items/Strings.php:95
+msgid "Items"
+msgstr ""
+
+#: includes/Modules/Categories/Strings.php:53
+msgid "The category tree every item is filed under."
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:29
+msgid "Good morning"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:30
+msgid "Good afternoon"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:31
+msgid "Good evening"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:34
+msgid "Stock value"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:35
+msgid "Movements, 30 days"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:36
+msgid "Units moved"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:38
+msgid "Stock by type"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:39
+msgid "Movement"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:40
+msgid "Top movers"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:41
+msgid "Recent activity"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:43
+msgid "In"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:44
+msgid "Out"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:45
+msgid "Movements"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:46
+msgid "View all"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:48
+msgid "Nothing has moved yet."
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:49
+msgid "No stock moved this week."
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:50
+msgid "Nothing is below its reorder level."
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:51
+msgid "No stock on hand yet."
+msgstr ""
+
+#. translators: %s: a percentage change, already formatted, e.g. "18%".
+#: includes/Modules/Dashboard/Strings.php:54
+#, php-format
+msgid "Up %s on the previous period"
+msgstr ""
+
+#. translators: %s: a percentage change, already formatted, e.g. "18%".
+#: includes/Modules/Dashboard/Strings.php:56
+#, php-format
+msgid "Down %s on the previous period"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:57
+msgid "Unchanged on the previous period"
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:59
+msgid "The dashboard could not be loaded."
+msgstr ""
+
+#: includes/Modules/Dashboard/Strings.php:63
+msgid "Stock, value, low stock and recent activity at a glance."
+msgstr ""
+
+#: includes/Modules/Export/Http/ExportController.php:121
+msgid "There is nothing of that type to export."
+msgstr ""
+
+#: includes/Modules/Export/Services/EntityExporter.php:95
+msgid "ID"
+msgstr ""
+
+#: includes/Modules/Export/Strings.php:41
+msgid "Export"
+msgstr ""
+
+#: includes/Modules/Export/Strings.php:42
+msgid "The Export button on every list, which writes what you are looking at to a CSV file."
+msgstr ""
+
+#. translators: %s: a formatted file size, e.g. "10 MB".
+#: includes/Modules/Import/FileIntake.php:118
+#, php-format
+msgid "That file is larger than this server accepts (%s)."
+msgstr ""
+
+#: includes/Modules/Import/FileIntake.php:128
+msgid "The file did not upload correctly. Try again."
+msgstr ""
+
+#: includes/Modules/Import/FileIntake.php:138
+msgid "That file is empty."
+msgstr ""
+
+#. translators: %s: a formatted file size, e.g. "10 MB".
+#: includes/Modules/Import/FileIntake.php:153
+#, php-format
+msgid "That file is larger than the %s limit for imports."
+msgstr ""
+
+#: includes/Modules/Import/FileIntake.php:163
+msgid "Import expects a CSV file. Save your spreadsheet as CSV and try again."
+msgstr ""
+
+#: includes/Modules/Import/FileIntake.php:210
+msgid "That file is named as a CSV but does not contain one."
+msgstr ""
+
+#: includes/Modules/Import/Http/ImportController.php:270
+msgid "No file was uploaded."
+msgstr ""
+
+#: includes/Modules/Import/Http/ImportController.php:346
+#: includes/Modules/Import/Strings.php:155
+msgid "Line"
+msgstr ""
+
+#: includes/Modules/Import/Http/ImportController.php:347
+#: includes/Modules/Import/Strings.php:156
+msgid "What happened"
+msgstr ""
+
+#: includes/Modules/Import/Http/ImportController.php:348
+msgid "Detail"
+msgstr ""
+
+#. translators: %s: a number of completed import runs.
+#: includes/Modules/Import/Module.php:92
+#, php-format
+msgid "%s import"
+msgid_plural "%s imports"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Modules/Import/Module.php:127
+msgid "An import has not finished. Complete or revert it first."
+msgstr ""
+
+#. translators: %s: a number of lines in the imported file.
+#: includes/Modules/Import/Repositories/ImportRowRepository.php:176
+#, php-format
+msgid "%s line"
+msgid_plural "%s lines"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: the id of the stock movement that reversed this import's stock.
+#: includes/Modules/Import/Repositories/ImportRowRepository.php:439
+#, php-format
+msgid "Opening stock reversed by stock movement #%d."
+msgstr ""
+
+#. translators: 1: a column label, 2: the value in the file, 3: a comma-separated list of accepted values.
+#: includes/Modules/Import/Services/CellCoercer.php:100
+#, php-format
+msgid "%1$s: “%2$s” is not one of %3$s."
+msgstr ""
+
+#. translators: 1: a column label, 2: the value in the file.
+#: includes/Modules/Import/Services/CellCoercer.php:135
+#, php-format
+msgid "%1$s: “%2$s” is not a yes or a no."
+msgstr ""
+
+#. translators: 1: a column label, 2: the value in the file.
+#: includes/Modules/Import/Services/CellCoercer.php:185
+#, php-format
+msgid "%1$s: “%2$s” is not a number."
+msgstr ""
+
+#. translators: 1: a column label, 2: the value in the file.
+#: includes/Modules/Import/Services/CellCoercer.php:199
+#, php-format
+msgid "%1$s: “%2$s” cannot be negative."
+msgstr ""
+
+#: includes/Modules/Import/Services/Importer.php:86
+#: includes/Modules/Import/Services/ImportService.php:204
+msgid "That import has been reverted."
+msgstr ""
+
+#: includes/Modules/Import/Services/Importer.php:96
+msgid "The uploaded file is no longer available, so this import cannot continue."
+msgstr ""
+
+#: includes/Modules/Import/Services/Importer.php:108
+#: includes/Modules/Import/Services/Importer.php:118
+msgid "That kind of record can no longer be imported."
+msgstr ""
+
+#: includes/Modules/Import/Services/Importer.php:329
+msgid "The row was empty."
+msgstr ""
+
+#: includes/Modules/Import/Services/Importer.php:336
+msgid "A record with that identifier already exists."
+msgstr ""
+
+#: includes/Modules/Import/Services/Importer.php:349
+msgid "No existing record matched."
+msgstr ""
+
+#: includes/Modules/Import/Services/Importer.php:416
+msgid "Opening stock was not posted: no warehouse."
+msgstr ""
+
+#. translators: 1: a column label, 2: the value in the file, 3: a comma-separated list of record ids.
+#: includes/Modules/Import/Services/Importer.php:503
+#, php-format
+msgid "%1$s: more than one record is called “%2$s” (%3$s). Use its code instead."
+msgstr ""
+
+#. translators: 1: a column label, 2: the value in the file.
+#: includes/Modules/Import/Services/Importer.php:516
+#, php-format
+msgid "%1$s: nothing here is called “%2$s”."
+msgstr ""
+
+#. translators: 1: a column label, 2: the value in the file.
+#: includes/Modules/Import/Services/Importer.php:563
+#, php-format
+msgid "%1$s: there is no user called “%2$s”."
+msgstr ""
+
+#: includes/Modules/Import/Services/Importer.php:647
+#: includes/Modules/Import/Services/ImportService.php:240
+#: includes/Modules/Import/Services/Reverter.php:97
+msgid "That import does not exist."
+msgstr ""
+
+#: includes/Modules/Import/Services/ImportService.php:63
+msgid "That kind of record cannot be imported."
+msgstr ""
+
+#: includes/Modules/Import/Services/ImportService.php:79
+msgid "You do not have permission to create those."
+msgstr ""
+
+#: includes/Modules/Import/Services/ImportService.php:89
+msgid "That is not an import mode."
+msgstr ""
+
+#: includes/Modules/Import/Services/ImportService.php:99
+#: includes/Modules/Import/Strings.php:54
+msgid "You do not have permission to change records that already exist."
+msgstr ""
+
+#: includes/Modules/Import/Services/ImportService.php:137
+msgid "The import could not be started."
+msgstr ""
+
+#: includes/Modules/Import/Services/ImportService.php:196
+msgid "This import has already started, so its columns can no longer be changed."
+msgstr ""
+
+#: includes/Modules/Import/Services/ImportTargets.php:223
+#: includes/Modules/Import/Strings.php:126
+msgid "Opening quantity"
+msgstr ""
+
+#: includes/Modules/Import/Services/ImportTargets.php:228
+#: includes/Modules/Import/Strings.php:128
+msgid "Warehouse the stock lands in"
+msgstr ""
+
+#: includes/Modules/Import/Services/ImportTargets.php:234
+#: includes/Modules/Import/Strings.php:127
+#: includes/Modules/StockMovements/Services/StockMovementService.php:423
+msgid "Cost per unit"
+msgstr ""
+
+#. translators: 1: the id of the import run, 2: a file name, 3: a number of lines.
+#: includes/Modules/Import/Services/OpeningStock.php:336
+#, php-format
+msgid "Opening balance — import #%1$d, from %2$s, %3$d lines."
+msgstr ""
+
+#. translators: %s: the reason the stock document could not be posted.
+#: includes/Modules/Import/Services/OpeningStock.php:351
+#, php-format
+msgid "Opening stock was not posted: %s"
+msgstr ""
+
+#: includes/Modules/Import/Services/Reverter.php:105
+msgid "That import has already been reverted."
+msgstr ""
+
+#: includes/Modules/Import/Services/Reverter.php:115
+msgid "You do not have permission to remove those."
+msgstr ""
+
+#: includes/Modules/Import/Services/Reverter.php:135
+msgid "This import cannot be reverted: the record of what it created is missing. The imported records are still there and have not been touched."
+msgstr ""
+
+#. translators: %s: a comma-separated list of item names.
+#: includes/Modules/Import/Services/Reverter.php:155
+#, php-format
+msgid "This import cannot be reverted: some of the stock it added has already been used (%s). Nothing has been changed."
+msgstr ""
+
+#. translators: 1: an import run id, 2: a document reference such as SM-2026-0043.
+#: includes/Modules/Import/Services/Reverter.php:440
+#, php-format
+msgid "Reversing import #%1$d opening balance (%2$s)"
+msgstr ""
+
+#. translators: 1: a number of stock documents, 2: the reason the next one failed.
+#: includes/Modules/Import/Services/Reverter.php:485
+#, php-format
+msgid "The revert stopped after taking back %1$d stock document(s): %2$s. Nothing else has been changed, and reverting again will carry on from there."
+msgstr ""
+
+#: includes/Modules/Import/Storage.php:313
+msgid "The file could not be stored."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:38
+#: includes/Modules/Import/Strings.php:40
+#: includes/Modules/Import/Strings.php:46
+#: includes/Modules/Import/Strings.php:119
+msgid "Import"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:39
+msgid "Bring items and reference data in from a CSV file, with a mapping step before anything is written."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:41
+msgid "Bring records in from a spreadsheet. Nothing is written until you have checked how the columns line up."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:44
+msgid "Choose a file"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:45
+msgid "Match columns"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:49
+msgid "What are you importing?"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:50
+msgid "When a record already exists"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:51
+msgid "Skip it — only add new records"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:52
+msgid "Update it, and add the ones that are new"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:53
+msgid "Update it — add nothing"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:55
+msgid "Choose a CSV file"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:56
+msgid "Reading the file…"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:57
+msgid "Download a template"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:58
+msgid "A CSV with the right headings and one example row. Fill it in and bring it back."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:61
+msgid "An item already here is recognised by its SKU, or by its barcode when it has no SKU."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:62
+msgid "A category already here is recognised by its code."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:63
+msgid "A unit already here is recognised by its code."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:64
+msgid "A warehouse already here is recognised by its code."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:65
+msgid "A person already here is recognised by their email address."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:68
+msgid "What your file should look like"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:69
+msgid "The first row is the column headings. Everything after it is one record per line."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:70
+msgid "A related record, such as a category or a warehouse, is found by its name or its code. Nothing new is created for you."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:71
+msgid "A line naming something that does not exist is not imported, and is listed by line number when the run finishes."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:74
+msgid "Recent imports"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:75
+msgid "Nothing imported yet."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:76
+msgid "File"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:77
+msgid "When"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:78
+msgid "Rows"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:79
+msgid "Resume"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:80
+msgid "Continue"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:81
+msgid "View the result"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:82
+msgid "Not started"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:83
+msgid "Ready to import"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:84
+msgid "Unfinished"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:85
+msgid "Finished"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:86
+msgid "Stopped"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:87
+msgid "Reverted"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:88
+msgid "The uploaded file has been cleaned up, so this run can no longer be resumed."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:91
+msgid "Column in your file"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:92
+msgid "Example"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:93
+msgid "Import as"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:94
+msgid "Do not import"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:95
+msgid "Guessed"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:96
+msgid "Match again"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:98
+msgid "Fields"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:105
+msgid "Opening stock — this posts a stock document"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:106
+msgid "Already used by"
+msgstr ""
+
+#. translators: {mapped} and {total} are numbers of columns, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:108
+msgid "{mapped} of {total} columns mapped"
+msgstr ""
+
+#. translators: {count} is a number of columns, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:110
+msgid "{count} ignored"
+msgstr ""
+
+#. translators: {fields} is a comma-separated list of field names, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:112
+msgid "These have to be mapped before this can run: {fields}"
+msgstr ""
+
+#. translators: {field} is a field name such as SKU, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:114
+msgid "Nothing can be matched without {field}. Map it, or switch to only adding new records."
+msgstr ""
+
+#. translators: {field} is a field name; {a} and {b} are two column headings from the file. Substituted by the admin app.
+#: includes/Modules/Import/Strings.php:116
+msgid "{field} is mapped twice — by “{a}” and by “{b}”. Pick one."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:117
+msgid "Not importable"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:118
+msgid "On hand is set by stock movements, so it cannot be written directly. To bring opening stock in, map this column to Opening quantity instead."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:120
+msgid "Back"
+msgstr ""
+
+#. translators: {file} is a file name and {rows} a number of lines, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:122
+msgid "{file} · {rows} rows"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:123
+msgid "Numbers are read using this site’s own thousands and decimal separators."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:129
+msgid "This will post stock, not just fill a column"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:130
+msgid "A finalized stock movement is created for this import, in the warehouse you choose. It appears in the ledger, it moves On hand, and correcting it later means a second document."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:131
+msgid "Opening stock is posted only for rows that create a new item, so running this file again will not double your stock."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:132
+msgid "Choose the warehouse the opening stock lands in."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:133
+msgid "Left unmapped, each line is valued at the item’s own cost price."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:136
+msgid "Importing…"
+msgstr ""
+
+#. translators: {done} and {total} are numbers of lines, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:138
+msgid "{done} of {total} lines"
+msgstr ""
+
+#. translators: {count} is a number of opening-stock lines, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:140
+msgid "Posting the opening stock — {count} lines to go"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:141
+msgid "Stop"
+msgstr ""
+
+#. translators: {done} and {total} are numbers of lines, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:143
+msgid "Stopped. {done} of {total} lines were imported; the rest are untouched."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:144
+msgid "What has already been imported stays. Resume picks up from the next line."
+msgstr ""
+
+#. translators: {message} is the server’s own explanation, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:146
+msgid "The import stopped: {message}"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:147
+msgid "The server stopped making progress, so this stopped rather than asking again forever."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:148
+msgid "An import is running. Leaving this page stops it — you can resume it from the list."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:151
+msgid "Added"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:152
+msgid "Updated"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:153
+msgid "Skipped"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:154
+msgid "Not imported"
+msgstr ""
+
+#. translators: {shown} and {total} are numbers of problems, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:158
+msgid "Showing the first {shown} of {total} problems."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:159
+msgid "Download the problems as CSV"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:160
+msgid "Import another file"
+msgstr ""
+
+#. translators: {count} is a number of items whose opening stock failed, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:162
+msgid "Opening stock could not be posted for {count} of them."
+msgstr ""
+
+#. translators: {reference} is a document reference such as ADJ-2026-0043, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:164
+msgid "An opening-stock document was left unfinalized ({reference}). Open it and finalize it, or delete it."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:167
+msgid "Revert this import"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:168
+msgid "Revert this import?"
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:169
+msgid "The records this import added are moved to the trash. Records it updated are not changed back."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:170
+msgid "The records this import added are moved to the trash, and the opening stock it posted is taken back out with a reversing stock movement. An item that now has stock history is unpublished instead of being removed, because its history is part of the audit trail. Records it updated are not changed back."
+msgstr ""
+
+#: includes/Modules/Import/Strings.php:171
+msgid "Revert"
+msgstr ""
+
+#. translators: {removed} and {unpublished} are numbers of records, substituted by the admin app.
+#: includes/Modules/Import/Strings.php:173
+msgid "Reverted. {removed} records were moved to the trash and {unpublished} were unpublished."
+msgstr ""
+
+#: includes/Modules/Items/Module.php:263
+#: includes/Modules/Items/Strings.php:35
+#: includes/Modules/Stock/Module.php:792
+#: includes/Modules/Stock/Repositories/TransactionRepository.php:97
+msgid "Item"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:273
+#: includes/Modules/Items/Services/ItemService.php:170
+#: includes/Modules/Items/Services/ItemService.php:446
+#: includes/Modules/Items/Strings.php:41
+msgid "SKU"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:277
+#: includes/Modules/Items/Strings.php:42
+msgid "Barcode"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:281
+#: includes/Modules/Items/Strings.php:43
+msgid "Serial number"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:285
+#: includes/Modules/Items/Repositories/ItemRepository.php:98
+#: includes/Modules/Items/Services/ItemService.php:302
+#: includes/Modules/Items/Strings.php:44
+#: includes/Modules/Stock/Module.php:794
+#: includes/Modules/Stock/Repositories/TransactionRepository.php:91
+#: includes/Modules/Stock/Strings.php:130
+#: includes/Modules/StockMovements/Module.php:207
+#: includes/Modules/StockMovements/Repositories/StockMovementRepository.php:79
+#: includes/Modules/StockMovements/Strings.php:43
+msgid "Type"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:296
+#: includes/Modules/Items/Repositories/ItemRepository.php:110
+#: includes/Modules/Items/Strings.php:53
+msgid "Default warehouse"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:301
+#: includes/Modules/Items/Repositories/ItemRepository.php:116
+#: includes/Modules/Items/Strings.php:55
+msgid "Unit"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:306
+#: includes/Modules/Items/Strings.php:56
+msgid "Image"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:310
+#: includes/Modules/Items/Strings.php:64
+msgid "On hand"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:315
+#: includes/Modules/Items/Services/ItemService.php:305
+#: includes/Modules/Items/Strings.php:65
+msgid "Reorder level"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:319
+#: includes/Modules/Items/Services/ItemService.php:306
+#: includes/Modules/Items/Strings.php:67
+msgid "Sale price"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:323
+#: includes/Modules/Items/Services/ItemService.php:307
+#: includes/Modules/Items/Strings.php:68
+msgid "Cost price"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:327
+#: includes/Modules/Items/Strings.php:69
+msgid "Track weight"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:331
+#: includes/Modules/Items/Services/ItemService.php:308
+#: includes/Modules/Items/Strings.php:70
+#: includes/Modules/Items/Strings.php:76
+#: includes/Modules/StockMovements/Services/StockMovementService.php:424
+msgid "Weight"
+msgstr ""
+
+#: includes/Modules/Items/Module.php:335
+#: includes/Modules/Items/Services/ItemService.php:304
+#: includes/Modules/Items/Strings.php:71
+#: includes/Modules/StockMovements/Services/StockMovementService.php:425
+msgid "Weight unit"
+msgstr ""
+
+#: includes/Modules/Items/Repositories/ItemRepository.php:122
+msgid "Unit price"
+msgstr ""
+
+#: includes/Modules/Items/Services/ItemService.php:110
+msgid "The item could not be saved."
+msgstr ""
+
+#: includes/Modules/Items/Services/ItemService.php:175
+#: includes/Modules/Items/Services/ItemService.php:446
+msgid "barcode"
+msgstr ""
+
+#: includes/Modules/Items/Services/ItemService.php:268
+msgid "That item does not exist."
+msgstr ""
+
+#. translators: 1: "SKU" or "barcode", 2: the value.
+#: includes/Modules/Items/Services/ItemService.php:283
+#, php-format
+msgid "This item cannot be restored: another item is now using the %1$s \"%2$s\". Change that one first."
+msgstr ""
+
+#: includes/Modules/Items/Services/ItemService.php:436
+msgid "An item needs a name."
+msgstr ""
+
+#. translators: %s: "SKU" or "barcode".
+#: includes/Modules/Items/Services/ItemService.php:458
+#, php-format
+msgid "A %s may only contain letters, digits, dots, dashes, underscores and slashes."
+msgstr ""
+
+#. translators: 1: "SKU" or "barcode", 2: the value, 3: the other item's name.
+#: includes/Modules/Items/Services/ItemService.php:474
+#, php-format
+msgid "The %1$s \"%2$s\" is already used by \"%3$s\"."
+msgstr ""
+
+#: includes/Modules/Items/Services/ItemService.php:502
+msgid "category"
+msgstr ""
+
+#: includes/Modules/Items/Services/ItemService.php:503
+msgid "warehouse"
+msgstr ""
+
+#: includes/Modules/Items/Services/ItemService.php:504
+msgid "unit"
+msgstr ""
+
+#. translators: %s: the kind of record, e.g. "category".
+#: includes/Modules/Items/Services/ItemService.php:519
+#, php-format
+msgid "That %s does not exist."
+msgstr ""
+
+#: includes/Modules/Items/Services/ItemService.php:537
+msgid "That image is not in the media library."
+msgstr ""
+
+#: includes/Modules/Items/Services/ItemService.php:549
+#: includes/Modules/Recipients/Services/RecipientService.php:223
+msgid "That WordPress user does not exist."
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:36
+msgid "All items"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:37
+msgid "New item"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:38
+msgid "Edit item"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:39
+msgid "Search items…"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:45
+msgid "Asset"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:46
+msgid "Consumable"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:47
+msgid "Sellable"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:48
+msgid "Something that is checked out and comes back — a drill, a laptop."
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:49
+msgid "Something that is used up — gloves, cable ties."
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:50
+msgid "Something you sell, so it carries a sale price as well as a cost."
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:51
+msgid "All types"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:54
+msgid "Where new stock is suggested to land. Stock itself is tracked per warehouse."
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:60
+msgid "Choose image"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:61
+msgid "Remove image"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:62
+msgid "Replace image"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:63
+msgid "Use this image"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:66
+msgid "Warn when stock falls to this. Leave at zero for no warning."
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:73
+msgid "Basic information"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:74
+msgid "Identification"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:75
+msgid "Stock and pricing"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:77
+msgid "Low stock only"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:78
+#: includes/Modules/Notifications/AlertType.php:70
+#: includes/Modules/Warehouses/Strings.php:47
+msgid "Low stock"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:79
+msgid "No items yet"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:80
+msgid "An item is anything you hold: an asset you lend out, a consumable you use up, or something you sell."
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:81
+msgid "This item still has stock or history"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:83
+msgid "This item is at or below its reorder level."
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:84
+msgid "Stored as"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:85
+msgid "At or below the reorder level"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:89
+msgid "New items track weight"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:90
+msgid "Default weight unit"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:91
+msgid "What a new item starts with. Items that already exist keep the weight settings they have."
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:96
+msgid "The inventory itself: assets, consumables and sellables, with SKUs and barcodes."
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:97
+msgid "Show all items"
+msgstr ""
+
+#: includes/Modules/Items/Strings.php:98
+msgid "Showing only items at or below their reorder level."
+msgstr ""
+
+#: includes/Modules/Lookup/Strings.php:33
+msgid "Scan or search"
+msgstr ""
+
+#: includes/Modules/Lookup/Strings.php:38
+msgid "No item has that code."
+msgstr ""
+
+#: includes/Modules/Lookup/Strings.php:41
+msgid "Scanner and quick search"
+msgstr ""
+
+#: includes/Modules/Lookup/Strings.php:42
+msgid "Quick search and barcode or SKU lookup from anywhere in the app."
+msgstr ""
+
+#: includes/Modules/Notifications/AlertType.php:71
+msgid "An item has fallen to or below its reorder level."
+msgstr ""
+
+#: includes/Modules/Notifications/AlertType.php:77
+#: includes/Modules/Notifications/Module.php:293
+msgid "Asset checked out"
+msgstr ""
+
+#: includes/Modules/Notifications/AlertType.php:78
+msgid "An asset has been checked out to somebody."
+msgstr ""
+
+#: includes/Modules/Notifications/AlertType.php:83
+msgid "System"
+msgstr ""
+
+#: includes/Modules/Notifications/AlertType.php:84
+msgid "The daily stock check found something worth looking at."
+msgstr ""
+
+#. translators: %d: number of saved per-user alert preferences.
+#: includes/Modules/Notifications/Module.php:88
+#, php-format
+msgid "%d alert preference"
+msgid_plural "%d alert preferences"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %s: the movement's reference.
+#: includes/Modules/Notifications/Module.php:296
+#, php-format
+msgid "Assets were checked out on %s."
+msgstr ""
+
+#: includes/Modules/Notifications/Module.php:327
+msgid "Stock health check found something"
+msgstr ""
+
+#. translators: %d: how many differences the daily check found.
+#: includes/Modules/Notifications/Module.php:330
+#, php-format
+msgid "The daily check found %d quantity that does not follow from the stock ledger."
+msgid_plural "The daily check found %d quantities that do not follow from the stock ledger."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Modules/Notifications/Module.php:340
+msgid "Open stock health"
+msgstr ""
+
+#: includes/Modules/Notifications/Repositories/NotificationRepository.php:69
+msgid "Kind"
+msgstr ""
+
+#: includes/Modules/Notifications/Repositories/NotificationRepository.php:74
+msgid "Priority"
+msgstr ""
+
+#. translators: %s: the alert type that was asked for.
+#: includes/Modules/Notifications/Services/AlertSubscriptionService.php:88
+#, php-format
+msgid "\"%s\" is not something this plugin can notify about."
+msgstr ""
+
+#. translators: %d: how many items are at or below their reorder level.
+#: includes/Modules/Notifications/Services/LowStockService.php:81
+#, php-format
+msgid "%d item is running low"
+msgid_plural "%d items are running low"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Modules/Notifications/Services/LowStockService.php:87
+msgid "Open the low-stock report"
+msgstr ""
+
+#. translators: %s: the site's name.
+#: includes/Modules/Notifications/Services/LowStockService.php:117
+#, php-format
+msgid "These items are at or below their reorder level on %s:"
+msgstr ""
+
+#. translators: 1: item name, 2: SKU or a dash, 3: quantity on hand, 4: reorder level.
+#: includes/Modules/Notifications/Services/LowStockService.php:126
+#, php-format
+msgid "%1$s (%2$s) — %3$s on hand, reorder at %4$s"
+msgstr ""
+
+#. translators: %d: how many further items are short and not listed.
+#: includes/Modules/Notifications/Services/LowStockService.php:138
+#, php-format
+msgid "and %d more."
+msgid_plural "and %d more."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: the site's name, 2: the alert's own subject line.
+#: includes/Modules/Notifications/Services/NotificationService.php:225
+#, php-format
+msgid "[%1$s] %2$s"
+msgstr ""
+
+#: includes/Modules/Notifications/Services/NotificationService.php:227
+msgid "Inventory alert"
+msgstr ""
+
+#: includes/Modules/Notifications/Services/NotificationService.php:343
+msgid "That notification does not exist."
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:32
+msgid "Notifications"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:33
+msgid "Notification"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:34
+msgid "Nothing to report"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:35
+msgid "Low stock, finished transfers and stock adjustments show up here."
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:36
+msgid "Mark all read"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:37
+msgid "Mark read"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:38
+msgid "Dismiss"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:39
+msgid "Unread"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:40
+msgid "Notification settings"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:42
+#: includes/Modules/Recipients/Module.php:170
+#: includes/Modules/Recipients/Strings.php:40
+msgid "Email"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:43
+msgid "In the app"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:49
+msgid "Low stock is sent as one digest a day, not one message per item. Turning email on will not send anything until the next daily check."
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:70
+msgid "Low"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:71
+msgid "Normal"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:72
+msgid "High"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:73
+msgid "Urgent"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:76
+msgid "Notifications and alerts"
+msgstr ""
+
+#: includes/Modules/Notifications/Strings.php:77
+msgid "The notification bell, low-stock emails and per-user alert preferences."
+msgstr ""
+
+#: includes/Modules/Recipients/Module.php:160
+#: includes/Modules/Recipients/Strings.php:35
+#: includes/Modules/Stock/Module.php:798
+#: includes/Modules/Stock/Repositories/TransactionRepository.php:109
+#: includes/Modules/Stock/Strings.php:145
+#: includes/Modules/StockMovements/Module.php:219
+#: includes/Modules/StockMovements/Repositories/StockMovementRepository.php:91
+#: includes/Modules/StockMovements/Strings.php:45
+msgid "Recipient"
+msgstr ""
+
+#: includes/Modules/Recipients/Module.php:161
+#: includes/Modules/Recipients/Strings.php:34
+#: includes/Modules/Recipients/Strings.php:55
+msgid "Recipients"
+msgstr ""
+
+#: includes/Modules/Recipients/Module.php:174
+#: includes/Modules/Recipients/Strings.php:41
+msgid "Phone"
+msgstr ""
+
+#: includes/Modules/Recipients/Module.php:178
+#: includes/Modules/Recipients/Repositories/RecipientRepository.php:58
+#: includes/Modules/Recipients/Strings.php:42
+msgid "Department"
+msgstr ""
+
+#: includes/Modules/Recipients/Module.php:182
+#: includes/Modules/Recipients/Strings.php:43
+msgid "WordPress user"
+msgstr ""
+
+#: includes/Modules/Recipients/Module.php:186
+#: includes/Modules/Recipients/Strings.php:45
+msgid "Notes"
+msgstr ""
+
+#: includes/Modules/Recipients/Services/RecipientService.php:62
+msgid "The recipient could not be saved."
+msgstr ""
+
+#: includes/Modules/Recipients/Services/RecipientService.php:132
+#: includes/Modules/StockMovements/Services/StockMovementService.php:576
+msgid "That recipient does not exist."
+msgstr ""
+
+#: includes/Modules/Recipients/Services/RecipientService.php:187
+msgid "A recipient needs a name."
+msgstr ""
+
+#: includes/Modules/Recipients/Services/RecipientService.php:214
+msgid "That email address does not look right."
+msgstr ""
+
+#: includes/Modules/Recipients/Strings.php:36
+msgid "New recipient"
+msgstr ""
+
+#: includes/Modules/Recipients/Strings.php:37
+msgid "Edit recipient"
+msgstr ""
+
+#: includes/Modules/Recipients/Strings.php:38
+msgid "Search recipients…"
+msgstr ""
+
+#: includes/Modules/Recipients/Strings.php:44
+msgid "Optional. Link this person to an account so they can be emailed about what they are holding."
+msgstr ""
+
+#: includes/Modules/Recipients/Strings.php:46
+msgid "All departments"
+msgstr ""
+
+#: includes/Modules/Recipients/Strings.php:47
+msgid "No recipients yet"
+msgstr ""
+
+#: includes/Modules/Recipients/Strings.php:48
+msgid "A recipient is who an asset gets checked out to. They do not need a WordPress account."
+msgstr ""
+
+#: includes/Modules/Recipients/Strings.php:49
+msgid "Checked out to"
+msgstr ""
+
+#: includes/Modules/Recipients/Strings.php:50
+msgid "Items held"
+msgstr ""
+
+#: includes/Modules/Recipients/Strings.php:56
+msgid "The people and departments items are checked out to."
+msgstr ""
+
+#: includes/Modules/Stock/Http/StockController.php:149
+msgid "Correcting stock quantities is restricted to administrators."
+msgstr ""
+
+#: includes/Modules/Stock/Http/TransactionsController.php:175
+msgid "That transaction does not exist."
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:495
+msgid "This warehouse still holds stock. Transfer or remove it first."
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:508
+msgid "Stock has been checked out to this person. Their history is part of the audit trail."
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:521
+msgid "This item still has stock on hand."
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:525
+msgid "This item has stock history, which is part of the audit trail. Unpublish it instead."
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:784
+#: includes/Modules/Stock/Strings.php:36
+msgid "Transaction"
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:785
+#: includes/Modules/Stock/Strings.php:35
+msgid "Transactions"
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:791
+#: includes/Modules/Stock/Repositories/TransactionRepository.php:134
+#: includes/Modules/Stock/Strings.php:42
+#: includes/Modules/StockMovements/Module.php:203
+#: includes/Modules/StockMovements/Repositories/StockMovementRepository.php:97
+#: includes/Modules/StockMovements/Services/StockMovementService.php:496
+#: includes/Modules/StockMovements/Strings.php:42
+msgid "Date"
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:793
+#: includes/Modules/Stock/Repositories/TransactionRepository.php:103
+#: includes/Modules/StockMovements/Module.php:213
+#: includes/Modules/StockMovements/Repositories/StockMovementRepository.php:85
+#: includes/Modules/StockMovements/Strings.php:44
+#: includes/Modules/Warehouses/Module.php:162
+#: includes/Modules/Warehouses/Strings.php:35
+msgid "Warehouse"
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:795
+#: includes/Modules/Stock/Strings.php:43
+msgid "Change"
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:796
+#: includes/Modules/Stock/Strings.php:44
+msgid "Balance"
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:797
+#: includes/Modules/Stock/Strings.php:45
+msgid "Cost"
+msgstr ""
+
+#: includes/Modules/Stock/Module.php:799
+#: includes/Modules/Stock/Strings.php:46
+msgid "Reason"
+msgstr ""
+
+#: includes/Modules/Stock/Repositories/TransactionRepository.php:140
+msgid "Entered"
+msgstr ""
+
+#: includes/Modules/Stock/Services/DocumentService.php:249
+msgid "You are not allowed to finalize this."
+msgstr ""
+
+#: includes/Modules/Stock/Services/DocumentService.php:257
+msgid "This document has already been finalized."
+msgstr ""
+
+#: includes/Modules/Stock/Services/DocumentService.php:267
+msgid "A document with no lines cannot be finalized."
+msgstr ""
+
+#: includes/Modules/Stock/Services/DocumentService.php:379
+msgid "That document does not exist."
+msgstr ""
+
+#: includes/Modules/Stock/Services/StockEngine.php:105
+msgid "There is nothing to apply."
+msgstr ""
+
+#: includes/Modules/Stock/Services/StockEngine.php:113
+#: includes/Modules/Stock/Services/StockEngine.php:436
+#: includes/Modules/Stock/Strings.php:124
+msgid "Another stock operation is in progress. Try again in a moment."
+msgstr ""
+
+#. translators: 1: how many cost layers one removal may consume.
+#: includes/Modules/Stock/Services/StockEngine.php:169
+#, php-format
+msgid "This item’s stock is spread across more than %1$d separate receipts, which is more than one removal can cost in a single step. Split it into smaller lines, or raise the limit with the plugixa_inventory_max_layer_walk filter. Nothing has been changed."
+msgstr ""
+
+#. translators: %s: the underlying costing error.
+#: includes/Modules/Stock/Services/StockEngine.php:197
+#, php-format
+msgid "The cost layers for an item no longer cover the stock on hand, so this removal cannot be costed. Nothing has been changed — Stock health lists where layers and stock disagree. (%s)"
+msgstr ""
+
+#: includes/Modules/Stock/Services/StockEngine.php:215
+#: includes/Modules/Stock/Services/StockEngine.php:596
+msgid "The stock change could not be applied. Nothing was changed."
+msgstr ""
+
+#: includes/Modules/Stock/Services/StockEngine.php:274
+msgid "There is not enough stock in one or more warehouses to finalize this document."
+msgstr ""
+
+#: includes/Modules/Stock/Services/StockEngine.php:353
+msgid "A stock operation is in progress, so the reconcile would report drift that is not there. Try again in a moment."
+msgstr ""
+
+#: includes/Modules/Stock/Services/StockEngine.php:610
+msgid "Stock changed while this document was being finalized. Nothing has been applied — reload and try again."
+msgstr ""
+
+#: includes/Modules/Stock/Services/StockEngine.php:684
+msgid "The stock change could not be recorded. Nothing was changed."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:37
+msgid "Stock ledger"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:38
+msgid "Search the ledger…"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:39
+msgid "Nothing has moved yet"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:40
+msgid "Every finalized movement, transfer and adjustment writes a line here. Nothing else can."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:47
+msgid "By"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:49
+#: includes/Modules/StockMovements/Strings.php:61
+msgid "Check in"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:50
+#: includes/Modules/StockMovements/Strings.php:62
+msgid "Check out"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:51
+#: includes/Modules/StockMovements/Strings.php:49
+#: includes/Modules/StockMovements/Strings.php:63
+msgid "Add stock"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:52
+#: includes/Modules/StockMovements/Strings.php:50
+#: includes/Modules/StockMovements/Strings.php:64
+msgid "Remove stock"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:53
+msgid "Transfer in"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:54
+msgid "Transfer out"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:55
+msgid "Adjustment: addition"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:56
+msgid "Adjustment: damage"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:57
+msgid "Adjustment: subtraction"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:61
+msgid "Transfers and adjustments"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:63
+msgid "Stock by warehouse"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:64
+msgid "Total on hand"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:65
+msgid "This item is not in any warehouse yet."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:67
+msgid "Costing method"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:68
+msgid "Average cost"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:69
+msgid "How the cost of stock leaving is worked out."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:83
+msgid "Stock health"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:84
+msgid "Every on-hand quantity should follow from the stock ledger. This checks that it still does."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:85
+msgid "Check now"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:86
+msgid "Correct from the ledger"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:87
+msgid "No drift. Every quantity follows from the ledger."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:88
+msgid "Corrected. Quantities now follow the ledger."
+msgstr ""
+
+#. translators: %s: how many differences were found.
+#: includes/Modules/Stock/Strings.php:90
+#, php-format
+msgid "%s finding(s). Nothing has been changed."
+msgstr ""
+
+#. translators: %s: how many cost layers disagree with the stock on hand.
+#: includes/Modules/Stock/Strings.php:92
+#, php-format
+msgid "%s cost layer(s) disagree with the stock on hand. Layers record which receipt paid for which removal, so they are reported and never rewritten — that history cannot be recomputed."
+msgstr ""
+
+#. translators: %s: how many stock operations were interrupted.
+#: includes/Modules/Stock/Strings.php:94
+#, php-format
+msgid "%s stock operation(s) were interrupted mid-write. If anything above looks wrong, start there."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:95
+msgid "The daily check has not run yet."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:96
+msgid "For a whole-site rebuild, use WP-CLI: wp plugixa-inventory stock reconcile"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:98
+msgid "Last checked"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:99
+msgid "pairs checked"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:100
+msgid "findings"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:101
+msgid "No drift"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:102
+msgid "Stock says"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:103
+msgid "Ledger says"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:104
+msgid "Each item also caches its total across every warehouse. These no longer match the item's own stock rows."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:105
+msgid "Cached total"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:106
+msgid "Sum of warehouses"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:107
+msgid "Deleted item"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:108
+msgid "Difference"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:109
+msgid "Working…"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:125
+msgid "Stock changed while you were working. Reload and try again."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:126
+msgid "There is not enough stock to finalize this."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:127
+msgid "The cost layers for an item no longer cover the stock on hand, so this removal cannot be costed. Stock health lists where layers and stock disagree."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:129
+msgid "The costing method saved for this site is not available in this build, so stock is costed at average cost. It comes back into force if that build returns; choosing a method here replaces it."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:134
+#: includes/Modules/Stock/Strings.php:138
+msgid "Transaction history"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:135
+msgid "The ledger of every stock change ever made, and the costing engine behind it."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:136
+msgid "Costing and stock"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:139
+msgid "Nothing has moved this item yet."
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:140
+msgid "View all transactions"
+msgstr ""
+
+#. translators: %s: the quantity on hand after this ledger entry.
+#: includes/Modules/Stock/Strings.php:142
+#, php-format
+msgid "→ %s total"
+msgstr ""
+
+#: includes/Modules/Stock/Strings.php:143
+msgid "Stock and actions"
+msgstr ""
+
+#. translators: %d: number of draft movements.
+#: includes/Modules/StockMovements/Module.php:165
+#, php-format
+msgid "%d draft check-out names this person."
+msgid_plural "%d draft check-outs name this person."
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Modules/StockMovements/Module.php:191
+#: includes/Modules/StockMovements/Strings.php:35
+msgid "Stock movement"
+msgstr ""
+
+#: includes/Modules/StockMovements/Module.php:192
+#: includes/Modules/StockMovements/Strings.php:34
+#: includes/Modules/StockMovements/Strings.php:59
+msgid "Stock movements"
+msgstr ""
+
+#: includes/Modules/StockMovements/Module.php:199
+#: includes/Modules/StockMovements/Strings.php:41
+msgid "Reference"
+msgstr ""
+
+#: includes/Modules/StockMovements/Module.php:230
+#: includes/Modules/StockMovements/Strings.php:46
+msgid "Details"
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:161
+msgid "The stock movement could not be saved."
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:211
+msgid "Remove the lines before changing the movement type: they were added for the type this document had."
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:258
+#: includes/Modules/StockMovements/Services/StockMovementService.php:566
+#: includes/Modules/Warehouses/Services/WarehouseService.php:174
+msgid "That warehouse does not exist."
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:266
+msgid "A check-out needs a recipient: somebody has to be recorded as holding this."
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:297
+msgid "Some lines point at an item that no longer exists."
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:306
+msgid "Check-in and check-out are for assets — things that come back. Remove the consumable and sellable lines, or use add stock / remove stock instead."
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:307
+msgid "Add stock and remove stock are for consumables and sellables. Assets are checked in and out instead, so that there is a record of who has them."
+msgstr ""
+
+#. translators: 1: movement type, 2: document reference or id.
+#: includes/Modules/StockMovements/Services/StockMovementService.php:393
+#, php-format
+msgid "Stock movement (%1$s) %2$s"
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:442
+msgid "Every line needs an item."
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:450
+msgid "Every line needs a quantity greater than zero."
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:495
+msgid "Movement type"
+msgstr ""
+
+#: includes/Modules/StockMovements/Services/StockMovementService.php:558
+msgid "A stock movement needs a warehouse."
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:36
+msgid "New stock movement"
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:37
+msgid "Edit stock movement"
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:38
+msgid "Search movements..."
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:39
+msgid "Movement details"
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:40
+msgid "Movement items"
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:47
+msgid "Check in (asset returned)"
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:48
+msgid "Check out (asset issued)"
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:51
+msgid "This movement will increase stock quantities when finalized."
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:52
+msgid "This movement will decrease stock quantities when finalized."
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:53
+msgid "Check in and check out are for assets - things that come back."
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:54
+msgid "A check-out needs a recipient."
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:55
+msgid "No stock movements yet"
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:56
+msgid "A movement is stock arriving, leaving, or going out to somebody who brings it back."
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:60
+msgid "Check-ins, check-outs and stock added or removed, one item at a time or in batches."
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:66
+msgid "Stock will be added to the warehouse, and the movement will be locked."
+msgstr ""
+
+#: includes/Modules/StockMovements/Strings.php:67
+msgid "Stock will leave the warehouse, and the movement will be locked."
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Http/WarehouseOverviewController.php:141
+msgid "There is no such warehouse."
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:29
+#: includes/Modules/Warehouses/Module.php:163
+#: includes/Modules/Warehouses/Strings.php:34
+#: includes/Modules/Warehouses/Strings.php:55
+msgid "Warehouses"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:30
+#: includes/Modules/Warehouses/Strings.php:39
+msgid "Search warehouses…"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:31
+#: includes/Modules/Warehouses/Strings.php:46
+msgid "Inventory value"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:32
+#: includes/Modules/Warehouses/Strings.php:48
+msgid "Activity (7 days)"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:33
+#: includes/Modules/Warehouses/Strings.php:49
+msgid "Transfers in"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:34
+#: includes/Modules/Warehouses/Strings.php:50
+msgid "Transfers out"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:35
+msgid "Pending transfers"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:36
+msgid "pending"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:39
+msgid "Activity"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:40
+msgid "Lowest stock here"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:41
+msgid "Nothing here is below its reorder level."
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:42
+msgid "This warehouse holds no stock yet."
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:43
+msgid "Nothing has moved here yet."
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:44
+#: includes/Modules/Warehouses/Strings.php:43
+msgid "No warehouses yet"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:45
+msgid "A warehouse is a place stock is kept. Add one under Configuration."
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:46
+msgid "No warehouse matches that."
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:47
+#: includes/Modules/Warehouses/Strings.php:38
+msgid "Edit warehouse"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:48
+msgid "Open"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:49
+msgid "Adjustments"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:52
+msgid "Warehouse overview"
+msgstr ""
+
+#: includes/Modules/WarehouseDashboard/Strings.php:53
+msgid "The operational view of each warehouse: what it holds, what is short, and what has moved."
+msgstr ""
+
+#: includes/Modules/Warehouses/Module.php:176
+#: includes/Modules/Warehouses/Strings.php:42
+msgid "Address"
+msgstr ""
+
+#: includes/Modules/Warehouses/Services/WarehouseService.php:64
+msgid "The warehouse could not be saved."
+msgstr ""
+
+#. translators: %s: the warehouse code.
+#: includes/Modules/Warehouses/Services/WarehouseService.php:161
+#, php-format
+msgid "This warehouse cannot be restored: another warehouse is now using the code \"%s\". Rename that one first."
+msgstr ""
+
+#: includes/Modules/Warehouses/Services/WarehouseService.php:218
+msgid "A warehouse needs a name."
+msgstr ""
+
+#. translators: %s: the warehouse code.
+#: includes/Modules/Warehouses/Services/WarehouseService.php:243
+#, php-format
+msgid "A warehouse with the code \"%s\" already exists."
+msgstr ""
+
+#: includes/Modules/Warehouses/Strings.php:36
+msgid "All warehouses"
+msgstr ""
+
+#: includes/Modules/Warehouses/Strings.php:37
+msgid "New warehouse"
+msgstr ""
+
+#: includes/Modules/Warehouses/Strings.php:44
+msgid "A warehouse is a place stock is held. Every quantity in this plugin is a quantity in one of them."
+msgstr ""
+
+#: includes/Modules/Warehouses/Strings.php:45
+msgid "This warehouse is still in use"
+msgstr ""
+
+#: includes/Modules/Warehouses/Strings.php:56
+msgid "The locations stock is kept in."
+msgstr ""
+
+#. translators: %s: the plugin file that was not loaded, e.g. "plugixa-inventory/plugixa-inventory.php".
+#: plugixa-inventory.php:86
+#, php-format
+msgid "Two copies of Plugixa Inventory are active. Only one can run, so %s was not loaded. Deactivate the copy you no longer need — your inventory data is shared and stays as it is."
+msgstr ""
+
+#: plugixa-inventory.php:139
+msgid "Plugixa Inventory: dependencies are missing. Run \"composer install\" in the plugin directory."
+msgstr ""
