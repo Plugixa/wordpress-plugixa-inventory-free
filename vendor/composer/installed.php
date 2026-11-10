@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'plugixa/plugixa-inventory',
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
-        'reference' => null,
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'reference' => 'c9483381e004c236ab663660c11cebdcc9f326cb',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,18 +11,18 @@
     ),
     'versions' => array(
         'freemius/wordpress-sdk' => array(
-            'pretty_version' => '2.13.4',
-            'version' => '2.13.4.0',
-            'reference' => 'fa43eb92ae9dffa0d9f5ae11b5a1739bd7222308',
+            'pretty_version' => '2.13.5',
+            'version' => '2.13.5.0',
+            'reference' => '0875c4ee3c941572f44d60cb2a687c54295db3d7',
             'type' => 'library',
             'install_path' => __DIR__ . '/../freemius/wordpress-sdk',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
         'plugixa/plugixa-inventory' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
-            'reference' => null,
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'c9483381e004c236ab663660c11cebdcc9f326cb',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
