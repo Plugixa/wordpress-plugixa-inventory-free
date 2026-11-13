@@ -1,0 +1,41 @@
+name: Sync from WordPress.org SVN
+
+# WordPress.org SVN cannot notify GitHub, so this polls it. New SVN tags become Git tags,
+# and main follows SVN trunk. Run it by hand right after an `svn commit` to skip the wait:
+#   gh workflow run sync-wporg-svn.yml -R Plugixa/wordpress-plugixa-inventory-free
+on:
+  schedule:
+    - cron: '23 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-wporg-svn
+  cancel-in-progress: false
+
+env:
+  SLUG: plugixa-inventory
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          fetch-tags: true
+
+      - name: Install Subversion
+        run: |
+          command -v svn >/dev/null || { sudo apt-get update -qq && sudo apt-get install -y -qq subversion; }
+          svn --version --quiet
+
+      - name: Mirror SVN tags and trunk
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          bash .github/scripts/sync-svn.sh
