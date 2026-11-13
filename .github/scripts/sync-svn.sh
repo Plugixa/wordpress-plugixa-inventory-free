@@ -18,6 +18,12 @@ WORK="$(mktemp -d)"
 trap 'rm -rf "$WORK"' EXIT
 cd "$ROOT"
 
+# Byte-for-byte: some SVN files are CRLF. A machine with core.autocrlf=true (Git for Windows'
+# default) would silently rewrite them to LF and every tree hash would drift.
+export GIT_CONFIG_COUNT=2
+export GIT_CONFIG_KEY_0=core.autocrlf GIT_CONFIG_VALUE_0=false
+export GIT_CONFIG_KEY_1=core.safecrlf GIT_CONFIG_VALUE_1=false
+
 changed=0
 
 # Export one SVN path and refuse anything that does not look like the plugin: a half-failed
@@ -67,6 +73,9 @@ stable="$(grep -i -m1 '^Stable tag:' "${trunk}/readme.txt" | sed 's/^[^:]*:[[:sp
 find "$ROOT" -mindepth 1 -maxdepth 1 ! -name .git ! -name .github ! -name README.md -exec rm -rf {} +
 cp -a "${trunk}/." "$ROOT/"
 
+# Drop the index and re-hash every file: an index whose cached stat (same size, same second)
+# happens to match a changed file would otherwise keep the old blob.
+git rm -r -q -f --cached . >/dev/null
 git add -A .
 if ! git diff --cached --quiet; then
   git commit -q -m "Mirror SVN trunk r${rev} (Stable tag ${stable:-unknown})"

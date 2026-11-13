@@ -1,18 +1,18 @@
 <div align="center">
 
-<img src="https://ps.w.org/plugixa-inventory/assets/icon-256x256.png" width="128" alt="Plugixa Inventory icon">
+<img src="https://ps.w.org/plugixa-inventory/assets/icon-256x256.png" width="88" alt="Plugixa Inventory icon" />
 
-# Plugixa Inventory
+# Plugixa Inventory - Stock Management, Warehouses & Stock Ledger
 
-**Inventory and stock management for WordPress: items, warehouses, stock movements and an append-only stock ledger, CSV import and export, and a WooCommerce integration in Pro, in a fast React admin.**
+**A WordPress inventory plugin**: items, warehouses, stock movements and an append-only stock ledger, CSV import and export, and a fast React admin that also runs on the front end of your site.
 
-[![Version](https://img.shields.io/wordpress/plugin/v/plugixa-inventory.svg)](https://wordpress.org/plugins/plugixa-inventory/)
-[![Downloads](https://img.shields.io/wordpress/plugin/dt/plugixa-inventory.svg)](https://wordpress.org/plugins/plugixa-inventory/)
-[![Tested up to](https://img.shields.io/wordpress/plugin/tested/plugixa-inventory.svg)](https://wordpress.org/plugins/plugixa-inventory/)
-[![Requires PHP](https://img.shields.io/wordpress/plugin/required-php/plugixa-inventory.svg)](https://wordpress.org/plugins/plugixa-inventory/)
-[![License: GPLv2 or later](https://img.shields.io/badge/license-GPLv2%20or%20later-blue.svg)](https://www.gnu.org/licenses/gpl-2.0.html)
+[![Version](https://img.shields.io/wordpress/plugin/v/plugixa-inventory?style=flat-square&label=version)](https://wordpress.org/plugins/plugixa-inventory/)
+[![Downloads](https://img.shields.io/wordpress/plugin/dt/plugixa-inventory?style=flat-square&label=downloads&logo=wordpress)](https://wordpress.org/plugins/plugixa-inventory/)
+[![Tested up to](https://img.shields.io/wordpress/plugin/tested/plugixa-inventory?style=flat-square&label=tested&logo=wordpress)](https://wordpress.org/plugins/plugixa-inventory/)
+[![Requires PHP](https://img.shields.io/badge/PHP%E2%89%A58.2-777BB4?style=flat-square&logo=php&logoColor=white)](https://wordpress.org/plugins/plugixa-inventory/)
+[![License](https://img.shields.io/badge/GPL--2.0%2B-green?style=flat-square)](https://www.gnu.org/licenses/gpl-2.0.html)
 
-<img src="https://ps.w.org/plugixa-inventory/assets/banner-1544x500.png" alt="Plugixa Inventory banner">
+<img src="https://ps.w.org/plugixa-inventory/assets/banner-1544x500.png" width="772" alt="Plugixa Inventory - stock management for WordPress" />
 
 </div>
 
@@ -20,54 +20,76 @@
 
 | | |
 |---|---|
-| 📚 **Documentation** | https://www.plugixa.com/documentation/plugixa-inventory?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=docs |
-| ⭐ **Plugixa Inventory Pro and pricing** | https://www.plugixa.com/plugins/plugixa-inventory?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=pricing#pricing |
-| 📰 **News** | https://www.plugixa.com/news?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=news |
-| 📋 **Changelog** | https://www.plugixa.com/changelog?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=changelog |
-| ✉️ **Contact** | https://www.plugixa.com/contact?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=contact |
-| 🛟 **Support forum** | https://wordpress.org/support/plugin/plugixa-inventory/ |
+| 📚 **Documentation** - getting started, items, warehouses, stock movements, the ledger, import and export | [plugixa.com/documentation/plugixa-inventory](https://www.plugixa.com/documentation/plugixa-inventory?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=docs) |
+| 📰 **News** - releases, announcements, what is coming | [plugixa.com/news](https://www.plugixa.com/news?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=news) |
+| 📋 **Changelog** - every release described in detail | [plugixa.com/changelog](https://www.plugixa.com/changelog?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=changelog) |
+| ✉️ **Contact us** - pre-sales questions and support requests | [plugixa.com/contact](https://www.plugixa.com/contact?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=contact) |
+| 🚀 **Plugixa Inventory Pro** - premium features and pricing | [plugixa.com/plugins/plugixa-inventory](https://www.plugixa.com/plugins/plugixa-inventory?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=pricing#pricing) |
+| 💬 **Support forum** - free help, answered on WordPress.org | [wordpress.org/support/plugin/plugixa-inventory](https://wordpress.org/support/plugin/plugixa-inventory/) |
 
 ## Screenshots
 
-| | | |
-|---|---|---|
-| ![Dashboard](https://ps.w.org/plugixa-inventory/assets/screenshot-1.png)<br>*Dashboard: stock value, low stock, a 30-day movement trend and the top movers* | ![Items](https://ps.w.org/plugixa-inventory/assets/screenshot-2.png)<br>*Items: the catalogue, with SKUs, types and on-hand totals per item* | ![Stock movement](https://ps.w.org/plugixa-inventory/assets/screenshot-3.png)<br>*A stock movement is drafted first, then finalized to write the ledger* |
-| ![Stock ledger](https://ps.w.org/plugixa-inventory/assets/screenshot-4.png)<br>*Stock ledger: every change to every quantity, which nothing can edit or delete* | ![Warehouse overview](https://ps.w.org/plugixa-inventory/assets/screenshot-5.png)<br>*Warehouse overview: stock, low stock and recent activity for one location* | ![Stock health](https://ps.w.org/plugixa-inventory/assets/screenshot-6.png)<br>*Stock health: the reconcile that proves the numbers still follow from the ledger* |
+<table>
+<tr>
+<td><img src="https://ps.w.org/plugixa-inventory/assets/screenshot-1.png" alt="" width="330" /></td>
+<td><img src="https://ps.w.org/plugixa-inventory/assets/screenshot-2.png" alt="" width="330" /></td>
+<td><img src="https://ps.w.org/plugixa-inventory/assets/screenshot-3.png" alt="" width="330" /></td>
+</tr>
+<tr>
+<td align="center"><sub>Dashboard - stock value, low stock, trend and top movers</sub></td>
+<td align="center"><sub>Items - SKUs, types and on-hand totals</sub></td>
+<td align="center"><sub>Stock movement - drafted, then finalized to the ledger</sub></td>
+</tr>
+<tr>
+<td><img src="https://ps.w.org/plugixa-inventory/assets/screenshot-4.png" alt="" width="330" /></td>
+<td><img src="https://ps.w.org/plugixa-inventory/assets/screenshot-5.png" alt="" width="330" /></td>
+<td><img src="https://ps.w.org/plugixa-inventory/assets/screenshot-6.png" alt="" width="330" /></td>
+</tr>
+<tr>
+<td align="center"><sub>Stock ledger - every change, which nothing can edit</sub></td>
+<td align="center"><sub>Warehouse overview - stock and activity per location</sub></td>
+<td align="center"><sub>Stock health - proves the numbers follow the ledger</sub></td>
+</tr>
+</table>
 
 ## What it is
 
-Plugixa Inventory turns WordPress into a working stock system. Records live in the plugin's own database tables, not in posts and post meta, so lists, filters and the dashboard stay fast as your history grows.
+📦 A working stock system for WordPress, free and not feature-locked. Records live in the plugin's own database tables, not in posts and post meta, so lists, filters and the dashboard stay fast as your history grows:
 
-- Items: assets, consumables and sellables, with SKUs, barcodes, serial numbers and reorder levels
-- Warehouses, each with its own stock levels, low-stock list and valuation - stock is held per item and per warehouse
-- Stock movements: add stock, remove stock, check in and check out - documents are drafted, then finalized, and a finalized document cannot be edited or deleted
-- An append-only stock ledger that on-hand quantities are derived from, which no REST route, admin screen or setting can edit or delete
-- A stock health check that proves the quantities still follow from the ledger, on demand and daily in the background
-- A dashboard with stock value, movement trend, low stock and top movers, plus a per-warehouse overview - stock is valued at cost, with average costing
-- CSV import with column matching, opening stock and one-click revert, and CSV export from every list, filters included
-- A `[plugixa_inventory_app]` shortcode that runs the whole application on a front-end page, a REST API (`plugixa-inventory/v1`), action and filter hooks, WP-CLI commands, six inventory capabilities and a ready-made Inventory Manager role
+- **Items** - assets, consumables and sellables, with SKUs, barcodes, serial numbers and reorder levels
+- **Warehouses** - stock held per item and per warehouse, each with its own low-stock list and valuation
+- **Stock movements** - add, remove, check in and check out; documents are drafted, then finalized, and a finalized document cannot be edited or deleted
+- **Stock ledger** - append-only; on-hand quantities are derived from it, and no REST route, screen or setting can change it
+- **Stock health** - a reconcile that proves the quantities still follow from the ledger, on demand and daily in the background
+- **Dashboard** - stock value at cost, movement trend, low stock and top movers, plus a per-warehouse overview
+- **Import and export** - CSV import with column matching, opening stock and one-click revert; CSV export from every list, filters included
+- **For developers and teams** - a `[plugixa_inventory_app]` shortcode for the front end, a REST API (`plugixa-inventory/v1`), hooks, WP-CLI commands, six capabilities and an Inventory Manager role
 
-**About WooCommerce:** the WooCommerce integration connects one warehouse to your shop and posts every order, cancellation and refund to the stock ledger. It is part of Plugixa Inventory Pro. The free plugin is complete on its own and does not change WooCommerce.
+The **WooCommerce integration** - one warehouse connected to your shop, every order, cancellation and refund posted to the ledger - is part of Plugixa Inventory Pro. A full tour is on the [documentation](https://www.plugixa.com/documentation/plugixa-inventory?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=docs) - and on the [WordPress.org plugin page](https://wordpress.org/plugins/plugixa-inventory/).
 
 ## Who is it for?
 
-Anyone who keeps stock and works in WordPress: shops and online sellers, warehouses and storage rooms, teams that track assets, consumables or equipment, and staff members who use the inventory on the front end without ever opening wp-admin.
+Shops and online sellers who want a real stock record behind their catalogue. Warehouses and storage rooms tracking quantities across several locations. Teams that look after assets, consumables or equipment. Staff members who use the inventory on the front end of the site without ever opening wp-admin.
 
 ## Get it
 
-- **From WordPress.org:** in your admin, go to Plugins, Add New, search for "Plugixa Inventory", install and activate. Plugin page: https://wordpress.org/plugins/plugixa-inventory/
-- **Direct download of the latest stable release:** https://downloads.wordpress.org/plugin/plugixa-inventory.latest-stable.zip
-- **Requirements:** WordPress 6.5 or greater, PHP 8.2 or greater.
-- Already selling with WooCommerce, or you want transfers, FIFO and LIFO costing, reports and labels? See [Plugixa Inventory Pro and pricing](https://www.plugixa.com/plugins/plugixa-inventory?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=pricing#pricing).
+The free plugin itself is hosted on WordPress.org - install it from your dashboard (**Plugins → Add New → search "Plugixa Inventory"**) or fetch it directly:
+
+```
+Latest release:  https://downloads.wordpress.org/plugin/plugixa-inventory.latest-stable.zip
+Install by ZIP:  Plugins → Add New → Upload Plugin → choose the ZIP → Activate
+Requires:        WordPress 6.5+, PHP 8.2+
+```
 
 ## About this repository
 
-- This repository mirrors the WordPress.org distribution of Plugixa Inventory.
-- The `main` branch tracks the plugin's SVN trunk, and each version tag (for example `1.1.1`) mirrors the matching SVN tag of the same number, byte for byte.
-- The README you are reading exists only on `main`; it is not part of the plugin itself.
-- Development and releases happen on WordPress.org. For questions and support, use the [support forum](https://wordpress.org/support/plugin/plugixa-inventory/); for anything else, [contact us](https://www.plugixa.com/contact?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=contact).
+This repository is a **mirror of the WordPress.org distribution of the free version**, updated automatically every hour from SVN:
+
+- the `main` branch tracks the published `trunk/`,
+- Git tags (`1.0.0` → current) match the SVN `tags/<version>` directories, byte for byte.
+
+Report bugs on the [support forum](https://wordpress.org/support/plugin/plugixa-inventory/); release notes live on our [changelog](https://www.plugixa.com/changelog?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=changelog). The premium version of Plugixa Inventory is distributed separately on [plugixa.com](https://www.plugixa.com/plugins/plugixa-inventory?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=repo-about#pricing) and is **not** contained here.
 
 ## License
 
-Released under the [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html), as published on WordPress.org. The upstream license file ships with the plugin in this repository.
-
+GPL-2.0-or-later - see [LICENSE](LICENSE). Plugixa Inventory is developed by [Plugixa](https://www.plugixa.com/?utm_source=github.com&utm_medium=repo_readme&utm_campaign=plugixa-inventory&utm_content=license).
