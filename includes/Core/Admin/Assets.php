@@ -142,7 +142,8 @@ final class Assets {
 		$this->on_inventory_screen = true;
 
 		Bundle::enqueue();
-		Config::inject( 'admin' );
+		// The Plugixa offer for the header button: admin screens only, never on a `[plugixa_inventory_app]` page.
+		Config::inject( 'admin', array( 'promo' => Promo::current() ) );
 		$this->reset_admin_chrome();
 
 		/*

@@ -10,6 +10,7 @@ namespace PlugixaInventory\Modules\Import\Services;
 use PlugixaInventory\Core\Database\IdList;
 use PlugixaInventory\Core\Database\Schema as Db;
 use PlugixaInventory\Core\Entities\EntityRegistry;
+use PlugixaInventory\Core\Entities\RecordLoader;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -321,7 +322,8 @@ final class LookupCache {
 	private function base_for( string $entity_type ): string {
 		$descriptor = $this->entities->get( $entity_type );
 
-		return (string) ( $descriptor['api_base'] ?? '' );
+		// The TABLE, not the REST segment: see RecordLoader::table_for() for the hyphen this converts.
+		return RecordLoader::table_for( (string) ( $descriptor['api_base'] ?? '' ) );
 	}
 
 	/**

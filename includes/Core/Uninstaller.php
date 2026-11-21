@@ -71,6 +71,9 @@ final class Uninstaller {
 			return self::REFUSED;
 		}
 
+		// A cache, not inventory data: it goes whether or not the inventory is kept.
+		delete_transient( 'plugixa_inventory_promo' );
+
 		/*
 		 * READ RAW, NOT THROUGH `Settings::get()`. The plugin is not booted during an uninstall —
 		 * `plugins_loaded` has already fired by the time WordPress includes this file — so no

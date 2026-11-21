@@ -342,6 +342,12 @@ final class Strings {
 			'pro_f_transfers_desc'   => __( 'Move stock from one location to another, with both sides recorded in the ledger.', 'plugixa-inventory' ),
 			'pro_f_adjustments'      => __( 'Inventory adjustments', 'plugixa-inventory' ),
 			'pro_f_adjustments_desc' => __( 'Record additions, damage and write-offs, each with a reason.', 'plugixa-inventory' ),
+			'pro_f_stock_takes'      => __( 'Stock takes', 'plugixa-inventory' ),
+			'pro_f_stock_takes_desc' => __( 'Count a warehouse with a scanner or a printed sheet, and post every difference in one step.', 'plugixa-inventory' ),
+			'pro_f_lots'             => __( 'Lot and expiry tracking', 'plugixa-inventory' ),
+			'pro_f_lots_desc'        => __( 'Record lot numbers and expiry dates as goods arrive, use the oldest first, and get warned before anything expires.', 'plugixa-inventory' ),
+			'pro_f_purchasing'       => __( 'Purchase orders and suppliers', 'plugixa-inventory' ),
+			'pro_f_purchasing_desc'  => __( 'Order from your suppliers, receive deliveries in one or more parts at the price you paid, and see what is running low.', 'plugixa-inventory' ),
 			'pro_f_costing'          => __( 'FIFO and LIFO costing', 'plugixa-inventory' ),
 			'pro_f_costing_desc'     => __( 'Value stock by the order it arrived in, with a cost layer for every receipt.', 'plugixa-inventory' ),
 			'pro_f_reports'          => __( 'Reports', 'plugixa-inventory' ),
@@ -362,9 +368,17 @@ final class Strings {
 			'pro_f_app_desc'         => __( 'Add the inventory to a phone or desktop like a native app, with desktop notifications.', 'plugixa-inventory' ),
 			'pro_f_support'          => __( 'Priority support', 'plugixa-inventory' ),
 			'pro_f_support_desc'     => __( 'Faster answers from the team that builds the plugin.', 'plugixa-inventory' ),
-			'pro_card_title'         => __( 'Get more from Plugixa Inventory', 'plugixa-inventory' ),
-			'pro_card_body'          => __( 'WooCommerce stock sync, warehouse transfers, FIFO and LIFO costing, reports and more come with Pro.', 'plugixa-inventory' ),
-			'pro_card_hide'          => __( 'Hide this card', 'plugixa-inventory' ),
+
+			// The Plugixa offer, carried by the header button (Core\Admin\Promo).
+			'promo_code'             => __( 'Code', 'plugixa-inventory' ),
+			'promo_copied'           => __( 'Copied', 'plugixa-inventory' ),
+			'promo_copy_code'        => __( 'Copy the code', 'plugixa-inventory' ),
+			'promo_ends_in'          => __( 'Ends in', 'plugixa-inventory' ),
+			/* translators: abbreviation of "days" in a countdown, e.g. "2d 04:10:00". */
+			'promo_days_short'       => __( 'd', 'plugixa-inventory' ),
+			'promo_get_deal'         => __( 'Get the deal', 'plugixa-inventory' ),
+			/* translators: after a discount in the header button, e.g. "Black Friday · 50% off". */
+			'promo_off'              => __( 'off', 'plugixa-inventory' ),
 			'pro_apps_more'          => __( 'More apps come with Pro.', 'plugixa-inventory' ),
 			'pro_apps_link'          => __( 'See what Pro adds', 'plugixa-inventory' ),
 

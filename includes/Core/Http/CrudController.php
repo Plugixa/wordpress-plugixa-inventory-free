@@ -443,7 +443,40 @@ abstract class CrudController extends RestController {
 	 * @return WP_REST_Response|WP_Error
 	 */
 	public function purge( WP_REST_Request $request ): WP_REST_Response|WP_Error {
-		$done = $this->do_purge( (int) $request['id'] );
+		$id  = (int) $request['id'];
+		$row = $this->repository()->find( $id, true );
+
+		if ( null === $row ) {
+			return $this->service()->not_found();
+		}
+
+		/*
+		 * TRASH FIRST, ALWAYS. The UI only offers purge from the Trash view, but the route took any
+		 * id, so a live record skipped the trash and every rule that guards it. Trash is where
+		 * "something still depends on this" is checked, so purge only empties the trash. The
+		 * `array_key_exists` check covers a table without the column, which has no trash to go through.
+		 */
+		if ( array_key_exists( 'deleted_at', $row ) && null === $row['deleted_at'] ) {
+			return new WP_Error(
+				'plugixa_inventory_purge_live',
+				__( 'Move this record to the trash before deleting it permanently.', 'plugixa-inventory' ),
+				array( 'status' => 409 )
+			);
+		}
+
+		// Asked again here, not only in the trash: stock can change between the trash and the purge,
+		// and the repository's own refusal is a bare `false` that would read as "not found".
+		$blockers = $this->repository()->purge_blockers( $id, $row );
+
+		if ( array() !== $blockers ) {
+			return new WP_Error(
+				'plugixa_inventory_in_use',
+				implode( ' ', $blockers ),
+				array( 'status' => 409, 'blockers' => $blockers )
+			);
+		}
+
+		$done = $this->do_purge( $id );
 
 		if ( $done instanceof WP_Error ) {
 			return $done;

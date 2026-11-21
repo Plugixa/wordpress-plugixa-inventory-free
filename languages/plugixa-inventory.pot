@@ -2,14 +2,14 @@
 # This file is distributed under the GPL-2.0-or-later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Plugixa Inventory 1.1.1\n"
+"Project-Id-Version: Plugixa Inventory 1.2.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/plugixa-inventory\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-11-08T15:33:11+00:00\n"
+"POT-Creation-Date: 2026-11-21T08:36:28+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: plugixa-inventory\n"
@@ -66,7 +66,7 @@ msgid "Operations"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:54
-#: includes/Core/Admin/Strings.php:347
+#: includes/Core/Admin/Strings.php:353
 msgid "Reports"
 msgstr ""
 
@@ -930,103 +930,151 @@ msgid "Record additions, damage and write-offs, each with a reason."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:345
-msgid "FIFO and LIFO costing"
+msgid "Stock takes"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:346
-msgid "Value stock by the order it arrived in, with a cost layer for every receipt."
+msgid "Count a warehouse with a scanner or a printed sheet, and post every difference in one step."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:347
+msgid "Lot and expiry tracking"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:348
-msgid "Turnover, cost of goods sold, trends and stock ageing, ready to export."
+msgid "Record lot numbers and expiry dates as goods arrive, use the oldest first, and get warned before anything expires."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:349
-msgid "Custom fields"
+msgid "Purchase orders and suppliers"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:350
-msgid "Twelve field types on items, warehouses and recipients."
+msgid "Order from your suppliers, receive deliveries in one or more parts at the price you paid, and see what is running low."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:351
-msgid "Units of measurement"
+msgid "FIFO and LIFO costing"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:352
-msgid "Buy by the box, issue by the piece, with conversions done for you."
-msgstr ""
-
-#: includes/Core/Admin/Strings.php:353
-msgid "Barcode and QR labels"
+msgid "Value stock by the order it arrived in, with a cost layer for every receipt."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:354
-msgid "Print item labels on label sheets or a thermal printer, ready to scan."
+msgid "Turnover, cost of goods sold, trends and stock ageing, ready to export."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:355
-msgid "Inventory roles"
+msgid "Custom fields"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:356
-msgid "Build roles from the plugin's capabilities and assign them to people, from inside the app."
+msgid "Twelve field types on items, warehouses and recipients."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:357
-msgid "Record permissions"
+msgid "Units of measurement"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:358
-msgid "Decide who can see and change which records."
+msgid "Buy by the box, issue by the piece, with conversions done for you."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:359
-msgid "Dark mode"
+msgid "Barcode and QR labels"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:360
-msgid "A dark theme for the whole app, or one that follows your system."
+msgid "Print item labels on label sheets or a thermal printer, ready to scan."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:361
-msgid "Phone and desktop app"
+msgid "Inventory roles"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:362
-msgid "Add the inventory to a phone or desktop like a native app, with desktop notifications."
+msgid "Build roles from the plugin's capabilities and assign them to people, from inside the app."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:363
-msgid "Priority support"
+msgid "Record permissions"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:364
-msgid "Faster answers from the team that builds the plugin."
+msgid "Decide who can see and change which records."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:365
-msgid "Get more from Plugixa Inventory"
+msgid "Dark mode"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:366
-msgid "WooCommerce stock sync, warehouse transfers, FIFO and LIFO costing, reports and more come with Pro."
+msgid "A dark theme for the whole app, or one that follows your system."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:367
-msgid "Hide this card"
+msgid "Phone and desktop app"
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:368
-msgid "More apps come with Pro."
+msgid "Add the inventory to a phone or desktop like a native app, with desktop notifications."
 msgstr ""
 
 #: includes/Core/Admin/Strings.php:369
+msgid "Priority support"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:370
+msgid "Faster answers from the team that builds the plugin."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:373
+#: includes/Modules/Categories/Module.php:176
+#: includes/Modules/Categories/Repositories/CategoryRepository.php:58
+#: includes/Modules/Categories/Strings.php:40
+#: includes/Modules/Warehouses/Module.php:167
+#: includes/Modules/Warehouses/Repositories/WarehouseRepository.php:63
+#: includes/Modules/Warehouses/Strings.php:40
+msgid "Code"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:374
+msgid "Copied"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:375
+msgid "Copy the code"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:376
+msgid "Ends in"
+msgstr ""
+
+#. translators: abbreviation of "days" in a countdown, e.g. "2d 04:10:00".
+#: includes/Core/Admin/Strings.php:378
+msgid "d"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:379
+msgid "Get the deal"
+msgstr ""
+
+#. translators: after a discount in the header button, e.g. "Black Friday · 50% off".
+#: includes/Core/Admin/Strings.php:381
+msgid "off"
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:382
+msgid "More apps come with Pro."
+msgstr ""
+
+#: includes/Core/Admin/Strings.php:383
 msgid "See what Pro adds"
 msgstr ""
 
 #. translators: %d: the maximum number of characters the field holds.
-#: includes/Core/Database/Repository.php:612
+#: includes/Core/Database/Repository.php:641
 #, php-format
 msgid "This is too long: at most %d characters."
 msgstr ""
@@ -1169,6 +1217,10 @@ msgstr ""
 msgid "Somebody else changed this record while you were editing it. Reload to see their version before saving yours."
 msgstr ""
 
+#: includes/Core/Http/CrudController.php:462
+msgid "Move this record to the trash before deleting it permanently."
+msgstr ""
+
 #: includes/Core/Http/FiltersController.php:105
 msgid "There is no such record type."
 msgstr ""
@@ -1284,15 +1336,6 @@ msgstr ""
 #: includes/Modules/Categories/Strings.php:34
 #: includes/Modules/Categories/Strings.php:52
 msgid "Categories"
-msgstr ""
-
-#: includes/Modules/Categories/Module.php:176
-#: includes/Modules/Categories/Repositories/CategoryRepository.php:58
-#: includes/Modules/Categories/Strings.php:40
-#: includes/Modules/Warehouses/Module.php:167
-#: includes/Modules/Warehouses/Repositories/WarehouseRepository.php:63
-#: includes/Modules/Warehouses/Strings.php:40
-msgid "Code"
 msgstr ""
 
 #: includes/Modules/Categories/Module.php:180
@@ -1490,7 +1533,7 @@ msgstr ""
 msgid "There is nothing of that type to export."
 msgstr ""
 
-#: includes/Modules/Export/Services/EntityExporter.php:95
+#: includes/Modules/Export/Services/EntityExporter.php:96
 msgid "ID"
 msgstr ""
 
@@ -1648,7 +1691,7 @@ msgstr ""
 
 #: includes/Modules/Import/Services/Importer.php:647
 #: includes/Modules/Import/Services/ImportService.php:240
-#: includes/Modules/Import/Services/Reverter.php:97
+#: includes/Modules/Import/Services/Reverter.php:98
 msgid "That import does not exist."
 msgstr ""
 
@@ -1705,32 +1748,32 @@ msgstr ""
 msgid "Opening stock was not posted: %s"
 msgstr ""
 
-#: includes/Modules/Import/Services/Reverter.php:105
+#: includes/Modules/Import/Services/Reverter.php:106
 msgid "That import has already been reverted."
 msgstr ""
 
-#: includes/Modules/Import/Services/Reverter.php:115
+#: includes/Modules/Import/Services/Reverter.php:116
 msgid "You do not have permission to remove those."
 msgstr ""
 
-#: includes/Modules/Import/Services/Reverter.php:135
+#: includes/Modules/Import/Services/Reverter.php:136
 msgid "This import cannot be reverted: the record of what it created is missing. The imported records are still there and have not been touched."
 msgstr ""
 
 #. translators: %s: a comma-separated list of item names.
-#: includes/Modules/Import/Services/Reverter.php:155
+#: includes/Modules/Import/Services/Reverter.php:156
 #, php-format
 msgid "This import cannot be reverted: some of the stock it added has already been used (%s). Nothing has been changed."
 msgstr ""
 
 #. translators: 1: an import run id, 2: a document reference such as SM-2026-0043.
-#: includes/Modules/Import/Services/Reverter.php:440
+#: includes/Modules/Import/Services/Reverter.php:441
 #, php-format
 msgid "Reversing import #%1$d opening balance (%2$s)"
 msgstr ""
 
 #. translators: 1: a number of stock documents, 2: the reason the next one failed.
-#: includes/Modules/Import/Services/Reverter.php:485
+#: includes/Modules/Import/Services/Reverter.php:486
 #, php-format
 msgid "The revert stopped after taking back %1$d stock document(s): %2$s. Nothing else has been changed, and reverting again will carry on from there."
 msgstr ""
@@ -2814,7 +2857,7 @@ msgid "The cost layers for an item no longer cover the stock on hand, so this re
 msgstr ""
 
 #: includes/Modules/Stock/Services/StockEngine.php:215
-#: includes/Modules/Stock/Services/StockEngine.php:596
+#: includes/Modules/Stock/Services/StockEngine.php:597
 msgid "The stock change could not be applied. Nothing was changed."
 msgstr ""
 
@@ -2826,11 +2869,11 @@ msgstr ""
 msgid "A stock operation is in progress, so the reconcile would report drift that is not there. Try again in a moment."
 msgstr ""
 
-#: includes/Modules/Stock/Services/StockEngine.php:610
+#: includes/Modules/Stock/Services/StockEngine.php:611
 msgid "Stock changed while this document was being finalized. Nothing has been applied — reload and try again."
 msgstr ""
 
-#: includes/Modules/Stock/Services/StockEngine.php:684
+#: includes/Modules/Stock/Services/StockEngine.php:685
 msgid "The stock change could not be recorded. Nothing was changed."
 msgstr ""
 

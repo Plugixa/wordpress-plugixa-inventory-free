@@ -119,6 +119,31 @@ final class LookupController extends RestController {
 			}
 		}
 
+		/**
+		 * Filter the item a code belongs to, when none of the item's own columns matched.
+		 *
+		 * For a module that keeps codes of its own against items, such as one per physical unit.
+		 * Answer with an item id; the item must still be live and published to be returned.
+		 *
+		 * @param int|null $item_id Null by default.
+		 * @param string   $code    The scanned code.
+		 */
+		$other = apply_filters( 'plugixa_inventory_lookup_code', null, $code );
+
+		if ( is_numeric( $other ) && (int) $other > 0 ) {
+			$rows = $this->items->query()
+				->where( "t.status = 'published'", array() )
+				->where( 't.id = %d', array( (int) $other ) )
+				->paginate( 1, 0 )
+				->get();
+
+			if ( array() !== $rows ) {
+				// `serial_number`: the existing word for "this code is one unit", so callers that
+				// already treat a serial match differently need nothing new.
+				return $this->ok( array( 'found' => true, 'matched' => 'serial_number', 'item' => $this->decorate( $rows[0] ) ) );
+			}
+		}
+
 		/*
 		 * NOT A 404. "This barcode is not one of ours" is a normal answer to a normal question, and
 		 * a scanner loop that had to distinguish an HTTP error from a miss would treat a network

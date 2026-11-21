@@ -508,6 +508,35 @@ abstract class Repository {
 	}
 
 	/**
+	 * Reasons this row must not be destroyed, as sentences. Empty means "go ahead".
+	 *
+	 * ═══════════════════════════════════════════════════════════════════════════════════════════
+	 * A PURGE ASKS THE SAME QUESTION A TRASH DOES. Items, warehouses and recipients each run a
+	 * `plugixa_inventory_{entity}_delete_blockers` filter before trashing, and Stock, StockMovements,
+	 * Transfers and WooCommerce answer it: stock on hand, ledger history, draft check-outs naming
+	 * somebody, the fulfilment warehouse. Only the SERVICES fired it, and only on trash, so
+	 * `DELETE /items/{id}/purge` went straight to the base purge and destroyed a live item that
+	 * still held stock, orphaning every stock row and ledger entry pointing at it.
+	 *
+	 * Firing it here makes the rule hold for every caller of `purge()`, not only the REST route.
+	 * Entities that nobody guards fire a filter nobody listens to, and get an empty array.
+	 * ═══════════════════════════════════════════════════════════════════════════════════════════
+	 *
+	 * @param int                  $id  Row id.
+	 * @param array<string, mixed> $row The row.
+	 *
+	 * @return string[]
+	 */
+	public function purge_blockers( int $id, array $row ): array {
+		$entity = $this->entity_type();
+
+		/** This filter is documented in each entity's service `delete()`. */
+		$blockers = (array) apply_filters( "plugixa_inventory_{$entity}_delete_blockers", array(), $id, $row );
+
+		return array_values( array_map( 'strval', $blockers ) );
+	}
+
+	/**
 	 * Delete a row permanently. There is no way back from here.
 	 *
 	 * @param int $id Row id.
@@ -537,7 +566,7 @@ abstract class Repository {
 		 */
 		$allowed = apply_filters( 'plugixa_inventory_can_purge', true, $entity, $id, $row );
 
-		if ( true !== $allowed ) {
+		if ( true !== $allowed || array() !== $this->purge_blockers( $id, $row ) ) {
 			return false;
 		}
 

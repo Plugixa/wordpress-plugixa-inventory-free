@@ -4,7 +4,7 @@ Tags: inventory, inventory management, stock management, warehouse, woocommerce
 Requires at least: 6.5
 Tested up to: 7.1
 Requires PHP: 8.2
-Stable tag: 1.1.1
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -67,6 +67,10 @@ Every quantity is held against a specific item and warehouse, so "how much is in
 * WooCommerce integration - the shop sells what a warehouse holds, and every order, cancellation and refund is posted to the stock ledger
 * Warehouse transfers - move stock between locations with both ledger legs
 * Inventory adjustments - addition, damage and subtraction, with a reason
+* Stock takes - count a warehouse with a scanner or a printed sheet, then post every difference in one step
+* Purchase orders and suppliers - order from suppliers, receive deliveries in one or more parts at the price paid, and see what needs reordering
+* Lot and expiry tracking - lot numbers and expiry dates from delivery to sale, first-expiring stock used first, and a warning before lots expire
+* Serial numbers - track every unit from delivery to sale, and find a unit by scanning its serial
 * FIFO and LIFO costing, with a cost layer per receipt
 * Reports - turnover, cost of goods sold, trends and stock ageing, with exports
 * Custom fields - twelve field types on items, warehouses and recipients
@@ -197,11 +201,11 @@ Nothing, unless you ask for it. Deleting the plugin removes its files and keeps 
 
 = Q. What is the difference between the free and Pro versions? =
 
-The free plugin is a complete stock system - items, warehouses, stock movements, the ledger, the dashboard, valuation at cost, CSV import and export, and the front-end shortcode. Pro adds the WooCommerce integration, warehouse transfers, inventory adjustments, FIFO and LIFO costing, reports, custom fields, units, barcode and QR labels, the Roles screen and the Permissions screen, dark mode, an installable app and desktop notifications. Upgrading never moves or changes your data. See the [Pro features](https://www.plugixa.com/plugins/plugixa-inventory#pricing).
+The free plugin is a complete stock system - items, warehouses, stock movements, the ledger, the dashboard, valuation at cost, CSV import and export, and the front-end shortcode. Pro adds the WooCommerce integration, warehouse transfers, inventory adjustments, stock takes, purchase orders and suppliers, lot, expiry and serial number tracking, FIFO and LIFO costing, reports, custom fields, units, barcode and QR labels, the Roles screen and the Permissions screen, dark mode, an installable app and desktop notifications. Upgrading never moves or changes your data. See the [Pro features](https://www.plugixa.com/plugins/plugixa-inventory#pricing).
 
 = Q. Does it need any external service? =
 
-Not to manage your inventory. Everything is read from and written to your own WordPress database, and no inventory data is ever sent anywhere. The one connection the plugin can make is to Freemius, for licensing and updates, described under "External services" below.
+Not to manage your inventory. Everything is read from and written to your own WordPress database, and no inventory data is ever sent anywhere. The plugin makes two outside connections, both described under "External services" below: Freemius, for licensing and updates, and plugixa.com, to check for a current Plugixa offer.
 
 = Q. Where is the source for the JavaScript the plugin loads? =
 
@@ -213,14 +217,19 @@ Full documentation - getting started, stock movements, the ledger, import and ex
 
 == External services ==
 
-This plugin connects to one third-party service, and only for licensing and updates. No inventory data - no item, warehouse, document, quantity, cost or ledger row - is sent to it or to anywhere else, ever.
+This plugin connects to two outside services: Freemius for licensing and updates, and plugixa.com for current offers. No inventory data - no item, warehouse, document, quantity, cost or ledger row - is sent to either of them or to anywhere else, ever.
 
 = Freemius =
 
 Used for licence activation, plugin updates, and an optional opt-in. On activation you are shown an opt-in screen; if you skip it, no identifiable data is sent. When you activate a licence or check for an update, your site URL, the plugin and SDK versions and your licence key are sent to https://api.freemius.com. If you opt in, the data that screen lists is sent to the same address: your WordPress user's first and last name and email address; your site's homepage URL and title, WordPress and PHP versions and site language; the plugin's version and whether it is active or uninstalled; and, unless you switch that item off on the opt-in screen, the names, slugs and versions of your installed plugins and themes and whether each is active.
 Provided by Freemius, Inc. - Terms: https://freemius.com/terms/ - Privacy: https://freemius.com/privacy/
 
-There is no other outbound request. The Freemius SDK in `vendor/freemius/` is the only code in the plugin that performs one. Fonts and icons are served from your own site; nothing is loaded from a CDN or from Google Fonts.
+= Plugixa offers (plugixa.com) =
+
+Free version only. Used to show a current Plugixa offer, such as a seasonal discount, in the plugin's own header button. When a user who can manage the inventory settings opens one of the plugin's admin screens, the free plugin asks https://www.plugixa.com/api/v1/promo whether an offer is running. The request carries only the plugin's slug and the word "free". The Pro version never makes this request. No site URL, licence key, user data or inventory data is sent. The answer is cached for 15 minutes, so the request is made at most four times an hour. Nothing is requested on the front end or for other users. To turn it off, add `add_filter( 'plugixa_inventory_show_promo', '__return_false' );` to your theme or a small plugin.
+Provided by Plugixa - Terms: https://www.plugixa.com/terms-of-service - Privacy: https://www.plugixa.com/privacy-policy
+
+There is no other outbound request. The Freemius SDK in `vendor/freemius/` and `includes/Core/Admin/Promo.php` are the only code in the plugin that performs one. Fonts and icons are served from your own site; nothing is loaded from a CDN or from Google Fonts.
 
 == Screenshots ==
 
@@ -232,6 +241,15 @@ There is no other outbound request. The Freemius SDK in `vendor/freemius/` is th
 6. Stock health - the reconcile that proves the numbers still follow from the ledger
 
 == Changelog ==
+
+= 1.2.0 =
+* New (Pro): stock takes. Count a warehouse with a scanner or a printed count sheet, with an optional blind count, then post every difference in one step. Stock sold while the count is open is never taken off twice
+* New (Pro): suppliers, with each supplier's code and price for an item and a preferred supplier
+* New (Pro): purchase orders. Order from a supplier, receive the goods in one or more deliveries at the price on the order, or cancel what has not arrived
+* New (Pro): a Reorder screen lists items at or below their reorder level, less what is already on order, and makes one draft order per supplier
+* New (Pro): lot and expiry tracking. Record lot numbers and expiry dates when goods arrive; stock is taken first-expiring-first-out, transfers keep their lots, and a daily alert warns before lots expire
+* New (Pro): serial numbers. Scan or paste serials when goods arrive, see which units are in stock, and find a unit by scanning its serial
+* Improved: the item lookup can find codes kept by other features, such as serial numbers
 
 = 1.1.1 =
 * New (Pro): print barcode or QR labels for items on A4 and Letter label sheets or a thermal printer, from the item list or an item's page
@@ -259,6 +277,9 @@ There is no other outbound request. The Freemius SDK in `vendor/freemius/` is th
 * REST API, developer hooks and WP-CLI commands
 
 == Upgrade Notice ==
+
+= 1.2.0 =
+Adds Pro stock takes, purchase orders and suppliers, lot and expiry tracking, and serial numbers. Updating does not change your existing items, stock or history.
 
 = 1.1.1 =
 Adds Pro barcode and QR labels. Updating does not change your existing items, stock or history.

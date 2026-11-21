@@ -577,6 +577,7 @@ final class StockEngine {
 		// The transfer pairs, so the costing strategy is asked to MOVE layers once rather than to
 		// consume and re-receive them — which would land the destination at the wrong cost.
 		$transfers = $this->transfer_pairs( $batch );
+		$trackers  = $this->trackers();
 
 		/*
 		 * The net change this batch has applied to each pair so far, keyed "item:warehouse". The
@@ -684,6 +685,12 @@ final class StockEngine {
 					__( 'The stock change could not be recorded. Nothing was changed.', 'plugixa-inventory' ),
 					array( 'status' => 500 )
 				);
+			}
+
+			// After the ledger row exists, so a tracker can point at it. A throw from here is caught
+			// by apply() and rolls the whole batch back, trackers included. See StockTracker.
+			foreach ( $trackers as $tracker ) {
+				$tracker->record( $batch, $line, $transaction_id, $new_quantity );
 			}
 
 			$results[] = array(
@@ -838,10 +845,35 @@ final class StockEngine {
 	 * @param StockBatch                      $batch   The batch.
 	 * @param array<int, array<string,mixed>> $applied The deltas that actually landed.
 	 */
+	/**
+	 * The trackers in force for this call.
+	 *
+	 * Asked each time rather than cached: a module switched off in the App Manager stops answering
+	 * the filter, and a stale list would keep calling it. Anything that is not a `StockTracker` is
+	 * dropped, so a wrong return from a filter cannot fatal the engine mid-batch.
+	 *
+	 * @return StockTracker[]
+	 */
+	private function trackers(): array {
+		/**
+		 * Filter the objects that keep their own record of stock alongside the engine.
+		 *
+		 * @param StockTracker[] $trackers None by default.
+		 */
+		$trackers = (array) apply_filters( 'plugixa_inventory_stock_trackers', array() );
+
+		return array_values( array_filter( $trackers, static fn( $tracker ): bool => $tracker instanceof StockTracker ) );
+	}
+
 	private function rollback( StockBatch $batch, array $applied ): void {
 		try {
 			// 1. The cost layers, by batch. Safe to call for a batch that created none.
 			$this->costing->unwind( $batch->batch_id );
+
+			// 1b. Whatever any tracker recorded for it. Each one must cope with a batch it never saw.
+			foreach ( $this->trackers() as $tracker ) {
+				$tracker->unwind( $batch->batch_id );
+			}
 
 			// 2. The quantities, inverted. Unguarded: a compensating move can never be short.
 			foreach ( array_reverse( $applied ) as $entry ) {

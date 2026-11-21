@@ -10,6 +10,7 @@ namespace PlugixaInventory\Modules\Export\Services;
 use PlugixaInventory\Core\Database\QueryBuilder;
 use PlugixaInventory\Core\Database\Schema as Db;
 use PlugixaInventory\Core\Entities\EntityRegistry;
+use PlugixaInventory\Core\Entities\RecordLoader;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -142,7 +143,14 @@ final class EntityExporter {
 	 * @return array<int, array<string, mixed>>
 	 */
 	private function read( string $api_base, string $entity_type, array $fields, string $search ): array {
-		$query = new QueryBuilder( Db::table( $api_base ), $entity_type, 'export' );
+		/*
+		 * `table_for()`, NOT THE api_base VERBATIM. "stock-movements" is a REST segment; the table is
+		 * `stock_movements`. Passing the api_base straight in named a table that does not exist, the
+		 * query failed with only a line in the error log, and every stock-movements export (and the
+		 * Pro custom-fields ones) came back as a header row and nothing else. RecordLoader hit the
+		 * same bug and owns the one conversion; this is its second caller, not a second copy.
+		 */
+		$query = new QueryBuilder( Db::table( RecordLoader::table_for( $api_base ) ), $entity_type, 'export' );
 
 		$query->order_by( 't.id', 'ASC' )->search( $search, $this->search_columns( $fields ) );
 

@@ -10,6 +10,7 @@ namespace PlugixaInventory\Modules\Import\Services;
 use PlugixaInventory\Core\Database\IdList;
 use PlugixaInventory\Core\Database\Schema as Db;
 use PlugixaInventory\Core\Entities\EntityRegistry;
+use PlugixaInventory\Core\Entities\RecordLoader;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -241,7 +242,7 @@ final class NaturalKey {
 
 		$base = (string) ( $descriptor['api_base'] ?? '' );
 
-		return '' === $base ? '' : Db::table( $base );
+		return '' === $base ? '' : Db::table( RecordLoader::table_for( $base ) );
 	}
 
 	/**

@@ -9,6 +9,7 @@ namespace PlugixaInventory\Modules\Import\Services;
 
 use PlugixaInventory\Core\Database\Schema as Db;
 use PlugixaInventory\Core\Entities\EntityRegistry;
+use PlugixaInventory\Core\Entities\RecordLoader;
 use PlugixaInventory\Core\Entities\RecordWriter;
 use PlugixaInventory\Core\Security\Capabilities;
 use PlugixaInventory\Modules\Import\Quiet;
@@ -248,7 +249,7 @@ final class Reverter {
 
 		global $wpdb;
 
-		$entity = Db::table( $base );
+		$entity = Db::table( RecordLoader::table_for( $base ) );
 		$log    = Db::table( 'import_rows' );
 
 		$options = (array) ( $descriptor['fields']['status']['options'] ?? array() );
